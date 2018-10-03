@@ -18,49 +18,44 @@ public class Classe_Login : MonoBehaviour {
 
 		login = new Banco_Login();		
 
-		try{
-			switch(login.retornaLogin(txtLogin.text, txtSenha.text)){
-				case "ESTUDANTE":
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = sucesso;
-					txtContinuar.text = "Entrando como Estudante, aperte em continuar!";
-					break;
-				case "PROFESSOR":
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = sucesso;
-					txtContinuar.text = "Entrando como Professor, aperte em continuar!";
-					break;
-				case "MONITOR":
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = sucesso;
-					txtContinuar.text = "Entrando como Monitor, aperte em continuar!";
-					break;
-				case "ADM":
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = sucesso;
-					txtContinuar.text = "Entrando como Administrador, aperte em continuar!";
-					break;
-				case "FALSO":
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = falha;
-					txtContinuar.text = "Login ou Senha Inválidos! Tente novamente.";
-					break;
-				default:
-					pnl_login.SetActive(false);
-					pnl_continuar.SetActive(true);
-					txtTituloContinuar.text = erro;
-					txtContinuar.text = "Ocorreu um erro :/. Por favor, contate o administrador.\ncaiorsantanna@gmail.com";
-					break;
-			}
-		}catch{
-			pnl_reconexao.SetActive(true);
-			pnl_todo.SetActive(false);
-		}	
+		switch(login.retornaLogin(txtLogin.text, txtSenha.text)){
+			case "ESTUDANTE":
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = sucesso;
+				txtContinuar.text = "Entrando como Estudante, aperte em continuar!";
+				break;
+			case "PROFESSOR":
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = sucesso;
+				txtContinuar.text = "Entrando como Professor, aperte em continuar!";
+				break;
+			case "MONITOR":
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = sucesso;
+				txtContinuar.text = "Entrando como Monitor, aperte em continuar!";
+				break;
+			case "ADM":
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = sucesso;
+				txtContinuar.text = "Entrando como Administrador, aperte em continuar!";
+				break;
+			case "FALSO":
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = falha;
+				txtContinuar.text = "Login ou Senha Inválidos! Tente novamente.";
+				break;
+			default:
+				pnl_login.SetActive(false);
+				pnl_continuar.SetActive(true);
+				txtTituloContinuar.text = erro;
+				txtContinuar.text = "Ocorreu um erro :/. Por favor, contate o administrador.\ncaiorsantanna@gmail.com";
+				break;
+		}
 
 	}
 
