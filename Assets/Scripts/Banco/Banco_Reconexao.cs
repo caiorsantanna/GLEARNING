@@ -36,14 +36,14 @@ public class Banco_Reconexao : MonoBehaviour {
 
 		*/
 
-		StartCoroutine("reconexao");
+		StartCoroutine(reconexao());
 	}
 
 	IEnumerator reconexao(){
 		pnl_todo.SetActive(false);
 		pnl_reconexao.SetActive(true);
 
-		contador = 5;
+		contador = 10;
 		segundos = 5;
 		int i;
 

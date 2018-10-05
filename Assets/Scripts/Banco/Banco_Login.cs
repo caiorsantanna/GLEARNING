@@ -32,7 +32,7 @@ public class Banco_Login : MonoBehaviour {
 		
 		 */
 		conexao = new Banco_Conexao();
-		reconexao = new Banco_Reconexao();		
+		reconexao = GameObject.Find("scripts").GetComponent<Banco_Reconexao>();
 
 		jogador = new Objeto_Player();
 		jogador.TipoLogin = "ERRO";		
@@ -147,7 +147,7 @@ public class Banco_Login : MonoBehaviour {
 			conexao.fecharBanco();
 
 		}catch{
-			reconexao.realizarReconexao();
+			reconexao.realizarReconexao();			
 			print("ERRO DE BANCO");
 		}
 		return jogador.TipoLogin;

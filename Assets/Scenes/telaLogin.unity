@@ -2515,7 +2515,6 @@ GameObject:
   - component: {fileID: 1876768494}
   - component: {fileID: 1876768496}
   - component: {fileID: 1876768495}
-  - component: {fileID: 1876768493}
   - component: {fileID: 1876768497}
   m_Layer: 0
   m_Name: scripts
@@ -2524,17 +2523,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1876768493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876768492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889b19d2374f2a948b58f62d37feddb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1876768494
 Transform:
   m_ObjectHideFlags: 0
@@ -2563,8 +2551,8 @@ MonoBehaviour:
   txtSenha: {fileID: 1911895216}
   pnl_login: {fileID: 876856517}
   pnl_continuar: {fileID: 1277996339}
-  pnl_todo: {fileID: 0}
-  pnl_reconexao: {fileID: 0}
+  pnl_todo: {fileID: 1671149368}
+  pnl_reconexao: {fileID: 1394697075}
   txtTituloContinuar: {fileID: 155115992}
   txtContinuar: {fileID: 1220232555}
 --- !u!114 &1876768496

@@ -82,4 +82,8 @@ public class Classe_Login : MonoBehaviour {
 		}
 	}
 
+	public void iniciarCadastro(){
+		UnityEngine.SceneManagement.SceneManager.LoadScene("telaCadastro");
+	}
+
 }
