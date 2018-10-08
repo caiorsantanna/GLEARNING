@@ -4,14 +4,14 @@ using UnityEngine;
 using System;
 using MySql.Data.MySqlClient;
 
-public class Banco_Login : MonoBehaviour {
+public class Banco_Login {
 
 	MySqlDataReader dados;
 	MySqlCommand comando;
 
 	Banco_Conexao conexao;
 	Banco_Reconexao reconexao;
-	Objeto_Player jogador;	
+	Objeto_Player player;	
 
 	public string retornaLogin(string login, string senha){
 
@@ -34,8 +34,8 @@ public class Banco_Login : MonoBehaviour {
 		conexao = new Banco_Conexao();
 		reconexao = GameObject.Find("scripts").GetComponent<Banco_Reconexao>();
 
-		jogador = new Objeto_Player();
-		jogador.TipoLogin = "ERRO";		
+		player = new Objeto_Player();
+		player.TipoLogin = "ERRO";		
 								
 		try{
 
@@ -49,16 +49,16 @@ public class Banco_Login : MonoBehaviour {
 			if(dados.HasRows){
 
 				while(dados.Read()){
-					jogador.Id = dados["USER_ESTUDANTE_ID"].ToString();
-					jogador.Cpf = dados["USER_ESTUDANTE_CPF"].ToString();
-					jogador.Nome = dados["USER_ESTUDANTE_NOME"].ToString();
-					jogador.Email = dados["USER_ESTUDANTE_EMAIL"].ToString();
-					jogador.Nivel = Convert.ToInt32(dados["USER_ESTUDANTE_NIVEL"]);
-					jogador.Ptotais = Convert.ToInt32(dados["USER_ESTUDANTE_PTOTAIS"]);
-					jogador.Psemestre = Convert.ToInt32(dados["USER_ESTUDANTE_PSEMESTRE"]);
-					jogador.Patuais = Convert.ToInt32(dados["USER_ESTUDANTE_PATUAIS"]);			
+					player.Id = dados["USER_ESTUDANTE_ID"].ToString();
+					player.Cpf = dados["USER_ESTUDANTE_CPF"].ToString();
+					player.Nome = dados["USER_ESTUDANTE_NOME"].ToString();
+					player.Email = dados["USER_ESTUDANTE_EMAIL"].ToString();
+					player.Nivel = (int) dados["USER_ESTUDANTE_NIVEL"];
+					player.Ptotais = (int) dados["USER_ESTUDANTE_PTOTAIS"];
+					player.Psemestre = (int) dados["USER_ESTUDANTE_PSEMESTRE"];
+					player.Patuais = (int) dados["USER_ESTUDANTE_PATUAIS"];						
 
-					jogador.TipoLogin = "ESTUDANTE";
+					player.TipoLogin = "ESTUDANTE";
 				}
 				
 			}else{
@@ -73,16 +73,16 @@ public class Banco_Login : MonoBehaviour {
 				if(dados.HasRows){
 		
 					while(dados.Read()){
-						jogador.Id = dados["USER_PROFESSOR_ID"].ToString();
-						jogador.Cpf = dados["USER_PROFESSOR_CPF"].ToString();
-						jogador.Nome = dados["USER_PROFESSOR_NOME"].ToString();
-						jogador.Email = dados["USER_PROFESSOR_EMAIL"].ToString();
-						jogador.Nivel = 0;
-						jogador.Ptotais = 0;
-						jogador.Psemestre = 0;
-						jogador.Patuais = 0;				
+						player.Id = dados["USER_PROFESSOR_ID"].ToString();
+						player.Cpf = dados["USER_PROFESSOR_CPF"].ToString();
+						player.Nome = dados["USER_PROFESSOR_NOME"].ToString();
+						player.Email = dados["USER_PROFESSOR_EMAIL"].ToString();
+						player.Nivel = 0;
+						player.Ptotais = 0;
+						player.Psemestre = 0;
+						player.Patuais = 0;				
 
-						jogador.TipoLogin = "PROFESSOR";					
+						player.TipoLogin = "PROFESSOR";					
 					}
 					
 				}else{
@@ -97,16 +97,16 @@ public class Banco_Login : MonoBehaviour {
 					if(dados.HasRows){
 			
 						while(dados.Read()){
-							jogador.Id = dados["USER_MONITOR_ID"].ToString();
-							jogador.Cpf = dados["USER_MONITOR_CPF"].ToString();
-							jogador.Nome = dados["USER_MONITOR_NOME"].ToString();
-							jogador.Email = dados["USER_MONITOR_EMAIL"].ToString();
-							jogador.Nivel = 0;
-							jogador.Ptotais = 0;
-							jogador.Psemestre = 0;
-							jogador.Patuais = 0;					
+							player.Id = dados["USER_MONITOR_ID"].ToString();
+							player.Cpf = dados["USER_MONITOR_CPF"].ToString();
+							player.Nome = dados["USER_MONITOR_NOME"].ToString();
+							player.Email = dados["USER_MONITOR_EMAIL"].ToString();
+							player.Nivel = 0;
+							player.Ptotais = 0;
+							player.Psemestre = 0;
+							player.Patuais = 0;					
 
-							jogador.TipoLogin = "MONITOR";
+							player.TipoLogin = "MONITOR";
 						}
 						
 					}else{
@@ -121,23 +121,23 @@ public class Banco_Login : MonoBehaviour {
 						if(dados.HasRows){
 				
 							while(dados.Read()){
-								jogador.Id = dados["USER_ADM_ID"].ToString();
-								jogador.Cpf = dados["USER_ADM_CPF"].ToString();
-								jogador.Nome = dados["USER_ADM_NOME"].ToString();
-								jogador.Email = dados["USER_ADM_EMAIL"].ToString();
-								jogador.Nivel = 0;
-								jogador.Ptotais = 0;
-								jogador.Psemestre = 0;
-								jogador.Patuais = 0;						
+								player.Id = dados["USER_ADM_ID"].ToString();
+								player.Cpf = dados["USER_ADM_CPF"].ToString();
+								player.Nome = dados["USER_ADM_NOME"].ToString();
+								player.Email = dados["USER_ADM_EMAIL"].ToString();
+								player.Nivel = 0;
+								player.Ptotais = 0;
+								player.Psemestre = 0;
+								player.Patuais = 0;						
 
-								jogador.TipoLogin = "ADM";
+								player.TipoLogin = "ADM";
 							}
 							
 						}else{
 							dados.Close();
 							comando.Dispose();							
 
-							jogador.TipoLogin = "FALSO";
+							player.TipoLogin = "FALSO";
 						}
 					}
 				}
@@ -148,9 +148,8 @@ public class Banco_Login : MonoBehaviour {
 
 		}catch{
 			reconexao.realizarReconexao();			
-			print("ERRO DE BANCO");
 		}
-		return jogador.TipoLogin;
+		return player.TipoLogin;
 	}
 	
 }

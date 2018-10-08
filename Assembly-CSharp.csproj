@@ -53,10 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Banco\Banco_Cadastro.cs" />
      <Compile Include="Assets\Scripts\Banco\Banco_Conexao.cs" />
      <Compile Include="Assets\Scripts\Banco\Banco_Login.cs" />
      <Compile Include="Assets\Scripts\Banco\Banco_Reconexao.cs" />
      <Compile Include="Assets\Scripts\Objeto_Player.cs" />
+     <Compile Include="Assets\Scripts\telaCadastro\Classe_Cadastro.cs" />
      <Compile Include="Assets\Scripts\telaLogin\Classe_Login.cs" />
      <Compile Include="Assets\Scripts\telaLogin\Classe_MascaraSenha.cs" />
  <Reference Include="UnityEditor.StandardEvents">

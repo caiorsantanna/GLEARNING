@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Objeto_Player : MonoBehaviour {
+public class Objeto_Player {
 
 	private static string id;
     private static string cpf;
@@ -12,7 +12,22 @@ public class Objeto_Player : MonoBehaviour {
     private static int ptotais;
     private static int psemestre;
     private static int patuais;
-    private static string tipoLogin;   
+    private static string nomeSala;
+    private static int codSala;
+    private static string tipoLogin;
+
+    public string NomeSala
+    {
+        get
+        {
+            return nomeSala;
+        }
+
+        set
+        {
+            nomeSala = value;
+        }
+    }
 
     public string Id
     {
@@ -128,6 +143,19 @@ public class Objeto_Player : MonoBehaviour {
         set
         {
             tipoLogin = value;
+        }
+    }
+
+    public int CodSala
+    {
+        get
+        {
+            return codSala;
+        }
+
+        set
+        {
+            codSala = value;
         }
     }
 }
