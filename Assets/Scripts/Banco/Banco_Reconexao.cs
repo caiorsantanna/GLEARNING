@@ -4,22 +4,14 @@ using MySql.Data.MySqlClient;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Banco_Reconexao : MonoBehaviour {
-	private const string url = "http://localhost/";
-	public GameObject pnl_reconexao, pnl_todo;	
-	public Text txt_tentativas, txt_contador;
-
-	private int contador, segundos, segundosAtuais;
-
+public class Banco_Reconexao : MonoBehaviour {	
+	public GameObject pnl_reconexao, pnl_tudo;		
     
     public void realizarReconexao(){
 
 		/*
-
 			METODO REALIZA CONEXAO
-
 			Metodo responsavel por realizar tentativas de reconexao quando necessário
-
 			Ordem de execução:
 			> Desativa a tela e ativa o pop up de reconexão
 			> Inicializa variaveis
@@ -31,21 +23,26 @@ public class Banco_Reconexao : MonoBehaviour {
 			>	Caso não, printar na tela e tentar de novo
 			> Fim do for
 			> Verificar se acabou o for e se sim, voltar na tela incial
-
 			Créditos: Caio Roman Sant'anna
-
 		*/
 
 		StartCoroutine(reconexao());
 	}
 
-	IEnumerator reconexao(){
-		pnl_todo.SetActive(false);
+	IEnumerator reconexao(){		
+
+		pnl_tudo.SetActive(false);
 		pnl_reconexao.SetActive(true);
 
-		contador = 10;
-		segundos = 5;
+		Text txt_tentativas = GameObject.Find("txt_tentativas").GetComponent<Text>();
+		Text txt_contador = GameObject.Find("txt_contador").GetComponent<Text>();
+
+		int contador = 10;
+		int segundos = 5;
+		int segundosAtuais;
 		int i;
+
+		const string url = "http://localhost/";
 
 		for(i = 0; i < contador; i++){
 			segundosAtuais = segundos;
@@ -62,7 +59,7 @@ public class Banco_Reconexao : MonoBehaviour {
 			yield return www;
 
 			if(www.error == null){
-				pnl_todo.SetActive(true);
+				pnl_tudo.SetActive(true);
 				pnl_reconexao.SetActive(false);
 				yield break;
 			}else{
@@ -74,7 +71,7 @@ public class Banco_Reconexao : MonoBehaviour {
 		if(i >= 5){
 			UnityEngine.SceneManagement.SceneManager.LoadScene("telaLogin");	
 		}else{
-			print("OCORREU UM ERRO LINHA 59: Banco_Reconexao");
+			print("OCORREU UM ERRO: Banco_Reconexao");
 		}
 
 	}	

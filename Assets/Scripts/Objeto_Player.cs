@@ -14,7 +14,9 @@ public class Objeto_Player {
     private static int patuais;
     private static string nomeSala;
     private static int codSala;
-    private static string tipoLogin;
+    private static int roupa;
+    private static int acessorio;
+    private static string tipoLogin;    
 
     public string NomeSala
     {
@@ -156,6 +158,32 @@ public class Objeto_Player {
         set
         {
             codSala = value;
+        }
+    }
+
+    public int Roupa
+    {
+        get
+        {
+            return roupa;
+        }
+
+        set
+        {
+            roupa = value;
+        }
+    }
+
+    public int Acessorio
+    {
+        get
+        {
+            return acessorio;
+        }
+
+        set
+        {
+            acessorio = value;
         }
     }
 }
