@@ -32,17 +32,16 @@ public class Classe_Login : MonoBehaviour {
 
 			if(dados.HasRows){
 
-				while(dados.Read()){
-					player.Id = dados["USER_ESTUDANTE_ID"].ToString();
-					player.Cpf = dados["USER_ESTUDANTE_CPF"].ToString();
-					player.Nome = dados["USER_ESTUDANTE_NOME"].ToString();
-					player.Email = dados["USER_ESTUDANTE_EMAIL"].ToString();
-					player.Nivel = (int) dados["USER_ESTUDANTE_NIVEL"];
-					player.Ptotais = (int) dados["USER_ESTUDANTE_PTOTAIS"];
-					player.Psemestre = (int) dados["USER_ESTUDANTE_PSEMESTRE"];
-					player.Patuais = (int) dados["USER_ESTUDANTE_PATUAIS"];
-					player.Roupa = (int) dados["COD_ROUPA"];
-					player.Acessorio = (int) dados["COD_ACESSORIO"];
+				while(dados.Read()){					
+					player.Cpf = System.Convert.ToInt64(dados["USER_ESTUDANTE_CPF"]);
+					player.Nome = System.Convert.ToString(dados["USER_ESTUDANTE_NOME"]);
+					player.Email = System.Convert.ToString(dados["USER_ESTUDANTE_EMAIL"]);
+					player.Nivel = System.Convert.ToInt32(dados["USER_ESTUDANTE_NIVEL"]);
+					player.Ptotais = System.Convert.ToInt32(dados["USER_ESTUDANTE_PTOTAIS"]);
+					player.Psemestre = System.Convert.ToInt32(dados["USER_ESTUDANTE_PSEMESTRE"]);
+					player.Patuais = System.Convert.ToInt32(dados["USER_ESTUDANTE_PATUAIS"]);
+					player.Roupa = System.Convert.ToInt64(dados["COD_ROUPA"]);
+					player.Acessorio = System.Convert.ToInt64(dados["COD_ACESSORIO"]);
 
 					player.TipoLogin = "ESTUDANTE";
 				}				
@@ -58,11 +57,10 @@ public class Classe_Login : MonoBehaviour {
 
 				if(dados.HasRows){
 		
-					while(dados.Read()){
-						player.Id = dados["USER_PROFESSOR_ID"].ToString();
-						player.Cpf = dados["USER_PROFESSOR_CPF"].ToString();
-						player.Nome = dados["USER_PROFESSOR_NOME"].ToString();
-						player.Email = dados["USER_PROFESSOR_EMAIL"].ToString();
+					while(dados.Read()){						
+						player.Cpf = System.Convert.ToInt64(dados["USER_PROFESSOR_CPF"]);
+						player.Nome = System.Convert.ToString(dados["USER_PROFESSOR_NOME"]);
+						player.Email = System.Convert.ToString(dados["USER_PROFESSOR_EMAIL"]);
 						player.Nivel = 0;
 						player.Ptotais = 0;
 						player.Psemestre = 0;
@@ -84,11 +82,10 @@ public class Classe_Login : MonoBehaviour {
 
 					if(dados.HasRows){
 			
-						while(dados.Read()){
-							player.Id = dados["USER_MONITOR_ID"].ToString();
-							player.Cpf = dados["USER_MONITOR_CPF"].ToString();
-							player.Nome = dados["USER_MONITOR_NOME"].ToString();
-							player.Email = dados["USER_MONITOR_EMAIL"].ToString();
+						while(dados.Read()){							
+							player.Cpf = System.Convert.ToInt64(dados["USER_MONITOR_CPF"]);
+							player.Nome = System.Convert.ToString(dados["USER_MONITOR_NOME"]);
+							player.Email = System.Convert.ToString(dados["USER_MONITOR_EMAIL"]);
 							player.Nivel = 0;
 							player.Ptotais = 0;
 							player.Psemestre = 0;
@@ -110,11 +107,10 @@ public class Classe_Login : MonoBehaviour {
 
 						if(dados.HasRows){
 				
-							while(dados.Read()){
-								player.Id = dados["USER_ADM_ID"].ToString();
-								player.Cpf = dados["USER_ADM_CPF"].ToString();
-								player.Nome = dados["USER_ADM_NOME"].ToString();
-								player.Email = dados["USER_ADM_EMAIL"].ToString();
+							while(dados.Read()){								
+								player.Cpf = System.Convert.ToInt64(dados["USER_ADM_CPF"]);
+								player.Nome = System.Convert.ToString(dados["USER_ADM_NOME"]);
+								player.Email = System.Convert.ToString(dados["USER_ADM_EMAIL"]);
 								player.Nivel = 0;
 								player.Ptotais = 0;
 								player.Psemestre = 0;

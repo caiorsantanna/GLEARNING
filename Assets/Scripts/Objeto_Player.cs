@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Objeto_Player {
-
-	private static string id;
-    private static string cpf;
+public class Objeto_Player {	
+    private static long cpf;
     private static string nome;    
     private static string email;
     private static int nivel;
@@ -13,9 +11,9 @@ public class Objeto_Player {
     private static int psemestre;
     private static int patuais;
     private static string nomeSala;
-    private static int codSala;
-    private static int roupa;
-    private static int acessorio;
+    private static long codSala;
+    private static long roupa;
+    private static long acessorio;
     private static string tipoLogin;    
 
     public string NomeSala
@@ -29,22 +27,9 @@ public class Objeto_Player {
         {
             nomeSala = value;
         }
-    }
+    }   
 
-    public string Id
-    {
-        get
-        {
-            return id;
-        }
-
-        set
-        {
-            id = value;
-        }
-    }
-
-    public string Cpf
+    public long Cpf
     {
         get
         {
@@ -148,7 +133,7 @@ public class Objeto_Player {
         }
     }
 
-    public int CodSala
+    public long CodSala
     {
         get
         {
@@ -161,7 +146,7 @@ public class Objeto_Player {
         }
     }
 
-    public int Roupa
+    public long Roupa
     {
         get
         {
@@ -174,7 +159,7 @@ public class Objeto_Player {
         }
     }
 
-    public int Acessorio
+    public long Acessorio
     {
         get
         {

@@ -25,14 +25,12 @@ public class Banco_Reconexao : MonoBehaviour {
 			> Verificar se acabou o for e se sim, voltar na tela incial
 			Créditos: Caio Roman Sant'anna
 		*/
-
+		pnl_tudo.SetActive(false);
+		pnl_reconexao.SetActive(true);
 		StartCoroutine(reconexao());
 	}
 
-	IEnumerator reconexao(){		
-
-		pnl_tudo.SetActive(false);
-		pnl_reconexao.SetActive(true);
+	IEnumerator reconexao(){				
 
 		Text txt_tentativas = GameObject.Find("txt_tentativas").GetComponent<Text>();
 		Text txt_contador = GameObject.Find("txt_contador").GetComponent<Text>();
