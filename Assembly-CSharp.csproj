@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Telas\telaCadastro\Classe_Cadastro.cs" />
      <Compile Include="Assets\Scripts\Telas\telaLogin\Classe_Login.cs" />
      <Compile Include="Assets\Scripts\Telas\telaLogin\Classe_MascaraSenha.cs" />
+     <Compile Include="Assets\Scripts\Telas\telaPrincipal\Classe_Movimento_Horizontal_Atividades.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Caio/Documents/Projetos/GLEARNING/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
