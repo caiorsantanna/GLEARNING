@@ -96,6 +96,48 @@ CREATE TABLE TB_ESTUDANTE_SALA (
 
 )ENGINE=INNODB;
 
+CREATE TABLE TB_NOMES (
+	NOME_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	NOME VARCHAR(50) NOT NULL,	
+	SEXO CHAR
+)ENGINE=INNODB;
+
+CREATE TABLE TB_SOBRENOMES (
+	SOBRENOME_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	SOBRENOME VARCHAR(50) NOT NULL		
+)ENGINE=INNODB;
+
+CREATE TABLE TB_NASCIONALIDADES (
+	NASCIONALIDADE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	NASCIONALIDADE VARCHAR(50) NOT NULL		
+)ENGINE=INNODB;
+
+CREATE TABLE TB_OCUPACOES (
+	OCUPACAO_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	OCUPACAO VARCHAR(50) NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE TB_HOBBIES (
+	HOBBIE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	HOBBIE VARCHAR(50) NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE TB_ATIVIDADES (
+	ATIVIDADE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	ATIVIDADE_LICAO VARCHAR(50) NOT NULL,
+	ATIVIDADE_NUMERO VARCHAR(50) NOT NULL,
+	ATIVIDADE_NOME VARCHAR(50) NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE TB_NIVEL_ATIVIDADE (
+	NIVEL_ATIVIDADE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	COD_ESTUDANTE BIGINT NOT NULL,
+	COD_ATIVIDADE INT NOT NULL,
+	NIVEL_ATIVIDADE INT NOT NULL,
+	CONSTRAINT FOREIGN KEY (COD_ESTUDANTE) REFERENCES TB_USER_ESTUDANTE(USER_ESTUDANTE_CPF),
+	CONSTRAINT FOREIGN KEY (COD_ATIVIDADE) REFERENCES TB_ATIVIDADES(ATIVIDADE_ID)
+)ENGINE=INNODB;
+
 /*  ----------- INSERTS ------------- */
 
 INSERT INTO TB_ROUPA(ROUPA_NOME, ROUPA_PRECO, ROUPA_NOMEID) VALUES
@@ -138,3 +180,57 @@ INSERT INTO TB_ESTUDANTE_SALA(COD_ESTUDANTE, COD_SALA) VALUES
 (40000000004, 2),
 (40000000005, 2),
 (40000000006, 2);
+
+INSERT INTO TB_NOMES(NOME, SEXO) VALUES
+('Liam', 	'M'),
+('Noah', 	'M'),
+('William', 'M'),
+('James', 	'M'),
+('Jacob', 	'M'),
+('Lucas', 	'M'),
+('Michael', 'M'),
+('Samuel', 	'M'),
+('David', 	'M'),
+('Gabriel', 'M'),
+('Emma', 	'F'),
+('Olivia', 	'F'),
+('Isabella','F'),
+('Sophia', 	'F'),
+('Camila', 	'F'),
+('Penelope','F'),
+('Chloe', 	'F'),
+('Victoria','F'),
+('Zoe', 	'F'),
+('Claire', 	'F');
+
+INSERT INTO TB_SOBRENOMES(SOBRENOME) VALUES
+('Smith'),('Miller'),('Walker'),('Turner'),('Wood'),('Flores'),('Collins'),('Scott'),
+('Garcia'),('Lopez'),('Stewart'),('Cortez'),('Silva'),('West'),('Sanders'),('Fisher'),
+('Morey'),('Gomez'),('Larsen'),('Frost');
+
+INSERT INTO TB_NASCIONALIDADES(NASCIONALIDADE) VALUES
+('Arabic'),('Australian'),('Chinese'),('Filipino'),('Georgian'),('Uruguayan'),('Indonesian'),
+('Persian'),('Japanese'),('Korean'),('Mongolian'),('Mexican'),('Pakistani'),('Venezuelan'),
+('Bulgarian'),('Costa'), ('Rican'),('Croatian'),('Peruvian'),('British'),('Dutch'),('English'),
+('Estonian'),('Ecuadorian'),('French'),('Frisian'),('German'),('Greek'),('Hungarian'),('Argentinian'),
+('Irish'),('Italian'),('Brazilian'),('Chilean'),('Macedonian'),('Canadian'),('Colombian'),('Polish'),
+('Portuguese'),('Romanian'),('Russian'),('Cuban'),('Scottish'),('Indonesian'),('Iranian'),('Swiss'),
+('Spanish'),('Swedish'),('Ukrainian'),('American'),('African');
+
+INSERT INTO TB_ATIVIDADES(ATIVIDADE_LICAO, ATIVIDADE_NUMERO, ATIVIDADE_NOME) VALUES
+('Lição 1', '1', 'Me faça um relatório!'),
+('Lição 1', '2', 'O que ele faz?');
+
+INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VALUES
+(40000000001, 1, 5),
+(40000000002, 1, 12),
+(40000000003, 1, 25),
+(40000000004, 1, 10),
+(40000000005, 1, 22),
+(40000000006, 1, 14),
+(40000000001, 2, 5),
+(40000000002, 2, 12),
+(40000000003, 2, 25),
+(40000000004, 2, 10),
+(40000000005, 2, 22),
+(40000000006, 2, 14),

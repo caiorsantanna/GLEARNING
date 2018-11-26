@@ -44,6 +44,8 @@ public class Classe_Login : MonoBehaviour {
 					player.Acessorio = System.Convert.ToInt64(dados["COD_ACESSORIO"]);
 
 					player.TipoLogin = "ESTUDANTE";
+
+					UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
 				}				
 				
 			}else{
@@ -116,7 +118,7 @@ public class Classe_Login : MonoBehaviour {
 								player.Psemestre = 0;
 								player.Patuais = 0;
 								player.Roupa = 0;
-							player.Acessorio = 0;					
+								player.Acessorio = 0;					
 
 								player.TipoLogin = "ADM";
 							}

@@ -14,7 +14,7 @@ public class Objeto_Player {
     private static long codSala;
     private static long roupa;
     private static long acessorio;
-    private static string tipoLogin;    
+    private static string tipoLogin;        
 
     public string NomeSala
     {
