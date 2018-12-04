@@ -29,6 +29,6 @@
     - Selecionar megacorp e entrar entrar na atividade 1
     - Fazer a atividade 1 licao 1
      
-  - Conclusões finais
+  <!-- - Conclusões finais
     - Devido ao tempo de perdemos com o tumulto de entrada e saida de participantes, acabamos não conseguindo entregar tudo o que queriamos, mas é fato que isso será desenvolvido. Todos os envolvidos estãos muito determinados e animados com esse projeto.
-    - O proxímo passo é terminar as atividades fixas das lições, para então desenvolver as atividades que o professor poderá passar, e finalmente os cosméticos e afins.    
+    - O proxímo passo é terminar as atividades fixas das lições, para então desenvolver as atividades que o professor poderá passar, e finalmente os cosméticos e afins. -->
