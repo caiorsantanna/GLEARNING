@@ -242,7 +242,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/gabri/OneDrive/Área de Trabalho/G-Learning/GLEARNING/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/gabri/Desktop/G-learning/GLEARNING/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -305,10 +305,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="MySql.Data">
- <HintPath>C:/Users/gabri/OneDrive/Área de Trabalho/G-Learning/GLEARNING/Assets/MySql.Data.dll</HintPath>
+ <HintPath>C:/Users/gabri/Desktop/G-learning/GLEARNING/Assets/MySql.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/gabri/OneDrive/Área de Trabalho/G-Learning/GLEARNING/Assets/System.Data.dll</HintPath>
+ <HintPath>C:/Users/gabri/Desktop/G-learning/GLEARNING/Assets/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/gabri/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

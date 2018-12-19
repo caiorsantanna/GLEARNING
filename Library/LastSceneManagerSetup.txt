@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/telaPrincipal.unity
+- path: Assets/Scenes/Atividades/licao_2_1.unity
   isLoaded: 1
   isActive: 1
