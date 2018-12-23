@@ -192,7 +192,7 @@ public class Classe_NPC_Licao1_Atv1 : MonoBehaviour {
 
         }
 
-        txt_dialogo.text = "Hello! My name is "+this.Nome+" "+this.Sobrenome+", and i am "+this.Nascionalidade+"!";   
+        txt_dialogo.text = "Hello! My name is "+this.Nome+" "+this.Sobrenome+", and I am "+this.Nascionalidade+"!";   
         img_dialogo.sprite = sprite_dialogo;
 
         txt_id.text = this.Id.ToString();

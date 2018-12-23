@@ -172,7 +172,8 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 			int n = 0;
 			if(dados.HasRows){
 				while(dados.Read()){
-					n = (int)dados["NIVEL_ATIVIDADE"];					
+					n = (int)dados["NIVEL_ATIVIDADE"];
+					print(n);					
 				}
 			}			
 

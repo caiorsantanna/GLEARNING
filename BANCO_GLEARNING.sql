@@ -214,7 +214,7 @@ INSERT INTO TB_NASCIONALIDADES(NASCIONALIDADE) VALUES
 ('Bulgarian'),('Costa'), ('Rican'),('Croatian'),('Peruvian'),('British'),('Dutch'),('English'),
 ('Estonian'),('Ecuadorian'),('French'),('Frisian'),('German'),('Greek'),('Hungarian'),('Argentinian'),
 ('Irish'),('Italian'),('Brazilian'),('Chilean'),('Macedonian'),('Canadian'),('Colombian'),('Polish'),
-('Portuguese'),('Romanian'),('Russian'),('Cuban'),('Scottish'),('Indonesian'),('Iranian'),('Swiss'),
+('Portuguese'),('Romanian'),('Russian'),('Cuban'),('Scottish'),('Iranian'),('Swiss'),
 ('Spanish'),('Swedish'),('Ukrainian'),('American'),('African');
 
 INSERT INTO TB_ATIVIDADES(ATIVIDADE_LICAO, ATIVIDADE_NUMERO, ATIVIDADE_NOME) VALUES
@@ -233,4 +233,4 @@ INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VA
 (40000000003, 2, 25),
 (40000000004, 2, 10),
 (40000000005, 2, 22),
-(40000000006, 2, 14),
+(40000000006, 2, 14);
