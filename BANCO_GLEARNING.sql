@@ -99,7 +99,7 @@ CREATE TABLE TB_ESTUDANTE_SALA (
 CREATE TABLE TB_NOMES (
 	NOME_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	NOME VARCHAR(50) NOT NULL,	
-	SEXO CHAR
+	TIPO VARCHAR(50) NOT NULL
 )ENGINE=INNODB;
 
 CREATE TABLE TB_SOBRENOMES (
@@ -115,6 +115,12 @@ CREATE TABLE TB_NASCIONALIDADES (
 CREATE TABLE TB_OCUPACOES (
 	OCUPACAO_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	OCUPACAO VARCHAR(50) NOT NULL
+)ENGINE=INNODB;
+
+CREATE TABLE TB_DESCRICOES (
+	DESCRICOES_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	DESCRICAO VARCHAR(500) NOT NULL,
+	TIPO VARCHAR(50) NOT NULL
 )ENGINE=INNODB;
 
 CREATE TABLE TB_HOBBIES (
@@ -181,7 +187,7 @@ INSERT INTO TB_ESTUDANTE_SALA(COD_ESTUDANTE, COD_SALA) VALUES
 (40000000005, 2),
 (40000000006, 2);
 
-INSERT INTO TB_NOMES(NOME, SEXO) VALUES
+INSERT INTO TB_NOMES(NOME, TIPO) VALUES
 ('Liam', 	'M'),
 ('Noah', 	'M'),
 ('William', 'M'),
@@ -201,7 +207,21 @@ INSERT INTO TB_NOMES(NOME, SEXO) VALUES
 ('Chloe', 	'F'),
 ('Victoria','F'),
 ('Zoe', 	'F'),
-('Claire', 	'F');
+('Claire', 	'F'),
+('Nome Empresa 1', 	'Empresa'),
+('Nome Empresa 2', 	'Empresa'),
+('Nome Empresa 3', 	'Empresa'),
+('Nome Empresa 4', 	'Empresa'),
+('Nome Empresa 5', 	'Empresa'),
+('Nome Empresa 6', 	'Empresa');
+
+INSERT INTO TB_DESCRICOES(DESCRICAO, TIPO) VALUES 
+('Descricao 1 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
+('Descricao 2 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
+('Descricao 3 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
+('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
+('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
+('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa');
 
 INSERT INTO TB_SOBRENOMES(SOBRENOME) VALUES
 ('Smith'),('Miller'),('Walker'),('Turner'),('Wood'),('Flores'),('Collins'),('Scott'),
@@ -218,8 +238,8 @@ INSERT INTO TB_NASCIONALIDADES(NASCIONALIDADE) VALUES
 ('Spanish'),('Swedish'),('Ukrainian'),('American'),('African');
 
 INSERT INTO TB_ATIVIDADES(ATIVIDADE_LICAO, ATIVIDADE_NUMERO, ATIVIDADE_NOME) VALUES
-('Lição 1', '1', 'Me faça um relatório!'),
-('Lição 1', '2', 'O que ele faz?');
+('Lição 1', '1', 'Lição 1 Atividade 1'),
+('Lição 2', '1', 'Lição 2 Atividade 1');
 
 INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VALUES
 (40000000001, 1, 5),

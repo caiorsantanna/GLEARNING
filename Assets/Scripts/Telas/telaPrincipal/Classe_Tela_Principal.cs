@@ -29,4 +29,9 @@ public class Classe_Tela_Principal : MonoBehaviour {
 	public void Licao1_Atividade1(){
 		UnityEngine.SceneManagement.SceneManager.LoadScene("licao_1_1");
 	}
+
+    public void Licao2_Atividade1()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("licao_2_1");
+    }
 }

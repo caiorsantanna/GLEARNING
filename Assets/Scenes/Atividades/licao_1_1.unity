@@ -7441,8 +7441,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 871828278}
-        m_MethodName: Metodo_Terminar_Licao1_Atv1
+      - m_Target: {fileID: 663419478}
+        m_MethodName: Metodo_Voltar_Menu_Principal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -66,9 +66,10 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 			
 			if(dados.HasRows){
 				while(dados.Read()){
-					if(dados["SEXO"].ToString() == "M"){
+					if(dados["TIPO"].ToString() == "M"){
 						nomes_masculinos.Add(dados["NOME"].ToString());						
-					}else{
+					}else if(dados["TIPO"].ToString() == "F")
+                    {
 						nomes_femininos.Add(dados["NOME"].ToString());
 					}
 				}
@@ -189,4 +190,9 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 
 		}
 	}
+    
+    public void Metodo_Voltar_Menu_Principal()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
+    }
 }
