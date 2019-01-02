@@ -8,14 +8,17 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 
 	public GameObject NPC;
 	public Dropdown dpw_nomes_1, dpw_nascionalidades_1, dpw_nomes_2, dpw_nascionalidades_2, dpw_nomes_3, dpw_nascionalidades_3, dpw_nomes_4, dpw_nascionalidades_4, dpw_nomes_5, dpw_nascionalidades_5, dpw_nomes_6, dpw_nascionalidades_6;
-	public List<GameObject> npcs = new List<GameObject>();	
-	public List<string> nomes_masculinos = new List<string>();
-	public List<string> nomes_femininos = new List<string>();
-	public List<string> sobrenomes = new List<string>();
-	public List<string> nascionalidades = new List<string>();	
-	List<Vector3> posicaoNPCs = new List<Vector3>();
+	public List<GameObject> npcs = new List<GameObject>();
+    public List<string> nomes_masculinos;
+    public List<string> nomes_femininos;
+    public List<string> sobrenomes;        
+    public List<string> nascionalidades;
 
-	public int nivel = 1;
+    public List<List<Vector3>> posicoesNPC = new List<List<Vector3>>();
+    public List<Vector3> posicoes1 = new List<Vector3>();
+    public List<Vector3> posicoes2 = new List<Vector3>();
+
+    public int nivel = 1;
 
 	MySqlCommand comando;
 	MySqlDataReader dados;
@@ -28,14 +31,21 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 		sobrenomes = new List<string>();
 		nascionalidades = new List<string>();
 		
-		posicaoNPCs.Add(new Vector3(-35, 1, 0));
-		posicaoNPCs.Add(new Vector3(-31, 1, 0));
-		posicaoNPCs.Add(new Vector3(-26, 1, 0));
-		posicaoNPCs.Add(new Vector3(-25, 3, 0));
-		posicaoNPCs.Add(new Vector3(-31, 3, 0));
-		posicaoNPCs.Add(new Vector3(-34, 3, 0));
+		posicoes1.Add(new Vector3(-35, 1, 0));
+		posicoes1.Add(new Vector3(-31, 1, 0));
+		posicoes1.Add(new Vector3(-26, 1, 0));
+                              
 
-		try{
+		posicoes2.Add(new Vector3(-25, 3, 0));
+		posicoes2.Add(new Vector3(-31, 3, 0));
+		posicoes2.Add(new Vector3(-34, 3, 0));
+
+
+        posicoesNPC.Add(posicoes1);
+        posicoesNPC.Add(posicoes2);        
+
+        try
+        {
 			conexao.conectarBanco();
 
 			// PEGAR NIVEL
@@ -60,17 +70,17 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 			comando.Dispose();
 			
 			// PEGAR NOMES MASCULINOS E FEMININOS
-			conexao.Sql = "SELECT * FROM TB_NOMES;";
+			conexao.Sql = "SELECT CONTEUDO_TEXTO, CONTEUDO_TAG1 FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Nome' AND (CONTEUDO_TAG1 = 'Masculino' OR CONTEUDO_TAG1 = 'Feminino');";
 			comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 			dados = comando.ExecuteReader();
 			
 			if(dados.HasRows){
 				while(dados.Read()){
-					if(dados["TIPO"].ToString() == "M"){
-						nomes_masculinos.Add(dados["NOME"].ToString());						
-					}else if(dados["TIPO"].ToString() == "F")
+					if(dados["CONTEUDO_TAG1"].ToString() == "Masculino"){
+						nomes_masculinos.Add(dados["CONTEUDO_TEXTO"].ToString());						
+					}else if(dados["CONTEUDO_TAG1"].ToString() == "Feminino")
                     {
-						nomes_femininos.Add(dados["NOME"].ToString());
+						nomes_femininos.Add(dados["CONTEUDO_TEXTO"].ToString());
 					}
 				}
 			}
@@ -92,13 +102,13 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 			comando.Dispose();
 
 			// PEGAR SOBRENOMES
-			conexao.Sql = "SELECT * FROM TB_SOBRENOMES;";
+			conexao.Sql = "SELECT CONTEUDO_TEXTO FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Sobrenome';";
 			comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 			dados = comando.ExecuteReader();
 
 			if(dados.HasRows){
 				while(dados.Read()){
-					sobrenomes.Add(dados["SOBRENOME"].ToString());
+					sobrenomes.Add(dados["CONTEUDO_TEXTO"].ToString());
 				}
 			}
 
@@ -106,13 +116,13 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 			comando.Dispose();
 
 			// PEGAR NASCIONALIDADES
-			conexao.Sql = "SELECT * FROM TB_NASCIONALIDADES;";
+			conexao.Sql = "SELECT CONTEUDO_TEXTO FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Nacionalidade';";
 			comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 			dados = comando.ExecuteReader();
 
 			if(dados.HasRows){
 				while(dados.Read()){
-					nascionalidades.Add(dados["NASCIONALIDADE"].ToString());
+					nascionalidades.Add(dados["CONTEUDO_TEXTO"].ToString());
 				}
 			}
 
@@ -147,17 +157,28 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 				nNpcs = 2;
 				break;
 		}
-		
 
-		// GERA NPCS
-		for(int i = 0; i < nNpcs; i++){
-			int rPosicao = Random.Range(0, posicaoNPCs.Count);			
-			GameObject npc = Instantiate(NPC, posicaoNPCs[rPosicao], Quaternion.identity);
+        int rPosicao1;
+        int rPosicao2;
+        // GERA NPCS
+        for (int i = 0; i < nNpcs; i++){
+            rPosicao1 = Random.Range(0, posicoesNPC.Count);
+            
+            if (posicoesNPC[rPosicao1].Count == 0)
+            {
+                posicoesNPC.RemoveAt(rPosicao1);
+                rPosicao1 = Random.Range(0, posicoesNPC.Count);
+            }
+            
+            rPosicao2 = Random.Range(0, posicoesNPC[rPosicao1].Count);
+            
+            GameObject npc = Instantiate(NPC, posicoesNPC[rPosicao1][rPosicao2], Quaternion.identity);
 			Classe_NPC_Licao1_Atv1 c = npc.GetComponent<Classe_NPC_Licao1_Atv1>();			
 			c.Id = i+1;
 			npcs.Add(npc);
-			posicaoNPCs.RemoveAt(rPosicao);
-		}
+			posicoesNPC[rPosicao1].RemoveAt(rPosicao2);
+            
+        }
 	}
 
 	public void Metodo_Adicionar_Pontos_Licao1_Atv1(){

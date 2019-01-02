@@ -96,36 +96,15 @@ CREATE TABLE TB_ESTUDANTE_SALA (
 
 )ENGINE=INNODB;
 
-CREATE TABLE TB_NOMES (
-	NOME_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	NOME VARCHAR(50) NOT NULL,	
-	TIPO VARCHAR(50) NOT NULL
-)ENGINE=INNODB;
-
-CREATE TABLE TB_SOBRENOMES (
-	SOBRENOME_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	SOBRENOME VARCHAR(50) NOT NULL		
-)ENGINE=INNODB;
-
-CREATE TABLE TB_NASCIONALIDADES (
-	NASCIONALIDADE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	NASCIONALIDADE VARCHAR(50) NOT NULL		
-)ENGINE=INNODB;
-
-CREATE TABLE TB_OCUPACOES (
-	OCUPACAO_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	OCUPACAO VARCHAR(50) NOT NULL
-)ENGINE=INNODB;
-
-CREATE TABLE TB_DESCRICOES (
-	DESCRICOES_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	DESCRICAO VARCHAR(500) NOT NULL,
-	TIPO VARCHAR(50) NOT NULL
-)ENGINE=INNODB;
-
-CREATE TABLE TB_HOBBIES (
-	HOBBIE_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	HOBBIE VARCHAR(50) NOT NULL
+CREATE TABLE TB_CONTEUDOS(
+	CONTEUDO_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	CONTEUDO_TEXTO VARCHAR(500) NOT NULL,
+	CONTEUDO_TIPO VARCHAR(50) NOT NULL,
+	CONTEUDO_TAG1 VARCHAR(50),
+	CONTEUDO_TAG2 VARCHAR(50),
+	CONTEUDO_TAG3 VARCHAR(50),
+	CONTEUDO_TAG4 VARCHAR(50),
+	CONTEUDO_TAG5 VARCHAR(50)
 )ENGINE=INNODB;
 
 CREATE TABLE TB_ATIVIDADES (
@@ -187,56 +166,6 @@ INSERT INTO TB_ESTUDANTE_SALA(COD_ESTUDANTE, COD_SALA) VALUES
 (40000000005, 2),
 (40000000006, 2);
 
-INSERT INTO TB_NOMES(NOME, TIPO) VALUES
-('Liam', 	'M'),
-('Noah', 	'M'),
-('William', 'M'),
-('James', 	'M'),
-('Jacob', 	'M'),
-('Lucas', 	'M'),
-('Michael', 'M'),
-('Samuel', 	'M'),
-('David', 	'M'),
-('Gabriel', 'M'),
-('Emma', 	'F'),
-('Olivia', 	'F'),
-('Isabella','F'),
-('Sophia', 	'F'),
-('Camila', 	'F'),
-('Penelope','F'),
-('Chloe', 	'F'),
-('Victoria','F'),
-('Zoe', 	'F'),
-('Claire', 	'F'),
-('Nome Empresa 1', 	'Empresa'),
-('Nome Empresa 2', 	'Empresa'),
-('Nome Empresa 3', 	'Empresa'),
-('Nome Empresa 4', 	'Empresa'),
-('Nome Empresa 5', 	'Empresa'),
-('Nome Empresa 6', 	'Empresa');
-
-INSERT INTO TB_DESCRICOES(DESCRICAO, TIPO) VALUES 
-('Descricao 1 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
-('Descricao 2 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
-('Descricao 3 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
-('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
-('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa'),
-('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad', 'Empresa');
-
-INSERT INTO TB_SOBRENOMES(SOBRENOME) VALUES
-('Smith'),('Miller'),('Walker'),('Turner'),('Wood'),('Flores'),('Collins'),('Scott'),
-('Garcia'),('Lopez'),('Stewart'),('Cortez'),('Silva'),('West'),('Sanders'),('Fisher'),
-('Morey'),('Gomez'),('Larsen'),('Frost');
-
-INSERT INTO TB_NASCIONALIDADES(NASCIONALIDADE) VALUES
-('Arabic'),('Australian'),('Chinese'),('Filipino'),('Georgian'),('Uruguayan'),('Indonesian'),
-('Persian'),('Japanese'),('Korean'),('Mongolian'),('Mexican'),('Pakistani'),('Venezuelan'),
-('Bulgarian'),('Costa'), ('Rican'),('Croatian'),('Peruvian'),('British'),('Dutch'),('English'),
-('Estonian'),('Ecuadorian'),('French'),('Frisian'),('German'),('Greek'),('Hungarian'),('Argentinian'),
-('Irish'),('Italian'),('Brazilian'),('Chilean'),('Macedonian'),('Canadian'),('Colombian'),('Polish'),
-('Portuguese'),('Romanian'),('Russian'),('Cuban'),('Scottish'),('Iranian'),('Swiss'),
-('Spanish'),('Swedish'),('Ukrainian'),('American'),('African');
-
 INSERT INTO TB_ATIVIDADES(ATIVIDADE_LICAO, ATIVIDADE_NUMERO, ATIVIDADE_NOME) VALUES
 ('Lição 1', '1', 'Lição 1 Atividade 1'),
 ('Lição 2', '1', 'Lição 2 Atividade 1');
@@ -254,3 +183,116 @@ INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VA
 (40000000004, 2, 10),
 (40000000005, 2, 22),
 (40000000006, 2, 14);
+
+INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_TAG2, CONTEUDO_TAG3, CONTEUDO_TAG4, CONTEUDO_TAG5) VALUES
+('Liam', 	'Nome', 'Masculino', null, null, null, null),
+('Noah', 	'Nome', 'Masculino', null, null, null, null),
+('William',	'Nome', 'Masculino', null, null, null, null),
+('James', 	'Nome', 'Masculino', null, null, null, null),
+('Jacob', 	'Nome', 'Masculino', null, null, null, null),
+('Lucas', 	'Nome', 'Masculino', null, null, null, null),
+('Michael',	'Nome', 'Masculino', null, null, null, null),
+('Samuel', 	'Nome', 'Masculino', null, null, null, null),
+('David', 	'Nome', 'Masculino', null, null, null, null),
+('Gabriel',	'Nome', 'Masculino', null, null, null, null),
+('Emma', 	'Nome', 'Feminino', null, null, null, null),
+('Olivia', 	'Nome', 'Feminino', null, null, null, null),
+('Isabella',	'Nome', 'Feminino', null, null, null, null),
+('Sophia', 	'Nome', 'Feminino', null, null, null, null),
+('Camila', 	'Nome', 'Feminino', null, null, null, null),
+('Penelope',	'Nome', 'Feminino', null, null, null, null),
+('Chloe', 	'Nome', 'Feminino', null, null, null, null),
+('Victoria',	'Nome', 'Feminino', null, null, null, null),
+('Zoe', 	'Nome', 'Feminino', null, null, null, null),
+('Claire', 	'Nome', 'Feminino', null, null, null, null),
+('Smith',	'Sobrenome', null, null, null, null, null),
+('Miller',	'Sobrenome', null, null, null, null, null),
+('Walker',	'Sobrenome', null, null, null, null, null),
+('Turner',	'Sobrenome', null, null, null, null, null),
+('Wood',	'Sobrenome', null, null, null, null, null),
+('Flores',	'Sobrenome', null, null, null, null, null),
+('Collins',	'Sobrenome', null, null, null, null, null),
+('Scott',	'Sobrenome', null, null, null, null, null),
+('Garcia',	'Sobrenome', null, null, null, null, null),
+('Lopez',	'Sobrenome', null, null, null, null, null),
+('Stewart',	'Sobrenome', null, null, null, null, null),
+('Cortez',	'Sobrenome', null, null, null, null, null),
+('Silva',	'Sobrenome', null, null, null, null, null),
+('West',	'Sobrenome', null, null, null, null, null),
+('Sanders',	'Sobrenome', null, null, null, null, null),
+('Fisher',	'Sobrenome', null, null, null, null, null),
+('Morey',	'Sobrenome', null, null, null, null, null),
+('Gomez',	'Sobrenome', null, null, null, null, null),
+('Larsen',	'Sobrenome', null, null, null, null, null),
+('Frost',	'Sobrenome', null, null, null, null, null),
+('Arabic',	'Nacionalidade', null, null, null, null, null),
+('Australian',	'Nacionalidade', null, null, null, null, null),
+('Chinese',	'Nacionalidade', null, null, null, null, null),
+('Filipino',	'Nacionalidade', null, null, null, null, null),
+('Georgian',	'Nacionalidade', null, null, null, null, null),
+('Uruguayan',	'Nacionalidade', null, null, null, null, null),
+('Indonesian',	'Nacionalidade', null, null, null, null, null),
+('Persian',	'Nacionalidade', null, null, null, null, null),
+('Japanese',	'Nacionalidade', null, null, null, null, null),
+('Korean',	'Nacionalidade', null, null, null, null, null),
+('Mongolian',	'Nacionalidade', null, null, null, null, null),
+('Mexican',	'Nacionalidade', null, null, null, null, null),
+('Pakistani',	'Nacionalidade', null, null, null, null, null),
+('Venezuelan',	'Nacionalidade', null, null, null, null, null),
+('Bulgarian',	'Nacionalidade', null, null, null, null, null),
+('Costa',	'Nacionalidade', null, null, null, null, null),
+('Rican',	'Nacionalidade', null, null, null, null, null),
+('Croatian',	'Nacionalidade', null, null, null, null, null),
+('Peruvian',	'Nacionalidade', null, null, null, null, null),
+('British',	'Nacionalidade', null, null, null, null, null),
+('Dutch',	'Nacionalidade', null, null, null, null, null),
+('English',	'Nacionalidade', null, null, null, null, null),
+('Estonian',	'Nacionalidade', null, null, null, null, null),
+('Ecuadorian',	'Nacionalidade', null, null, null, null, null),
+('French',	'Nacionalidade', null, null, null, null, null),
+('Frisian',	'Nacionalidade', null, null, null, null, null),
+('German',	'Nacionalidade', null, null, null, null, null),
+('Greek',	'Nacionalidade', null, null, null, null, null),
+('Hungarian',	'Nacionalidade', null, null, null, null, null),
+('Argentinian',	'Nacionalidade', null, null, null, null, null),
+('Irish',	'Nacionalidade', null, null, null, null, null),
+('Italian',	'Nacionalidade', null, null, null, null, null),
+('Brazilian',	'Nacionalidade', null, null, null, null, null),
+('Chilean',	'Nacionalidade', null, null, null, null, null),
+('Macedonian',	'Nacionalidade', null, null, null, null, null),
+('Canadian',	'Nacionalidade', null, null, null, null, null),
+('Colombian',	'Nacionalidade', null, null, null, null, null),
+('Polish',	'Nacionalidade', null, null, null, null, null),
+('Portuguese',	'Nacionalidade', null, null, null, null, null),
+('Romanian',	'Nacionalidade', null, null, null, null, null),
+('Russian',	'Nacionalidade', null, null, null, null, null),
+('Cuban',	'Nacionalidade', null, null, null, null, null),
+('Scottish',	'Nacionalidade', null, null, null, null, null),
+('Iranian',	'Nacionalidade', null, null, null, null, null),
+('Swiss',	'Nacionalidade', null, null, null, null, null),
+('Spanish',	'Nacionalidade', null, null, null, null, null),
+('Swedish',	'Nacionalidade', null, null, null, null, null),
+('Ukrainian',	'Nacionalidade', null, null, null, null, null),
+('American',	'Nacionalidade', null, null, null, null, null),
+('African',	'Nacionalidade', null, null, null, null, null),
+('Nome Empresa 1', 	'Nome','Empresa', null, null, null, null),
+('Nome Empresa 2', 	'Nome','Empresa', null, null, null, null),
+('Nome Empresa 3', 	'Nome','Empresa', null, null, null, null),
+('Nome Empresa 4', 	'Nome','Empresa', null, null, null, null),
+('Nome Empresa 5', 	'Nome','Empresa', null, null, null, null),
+('Nome Empresa 6', 	'Nome','Empresa', null, null, null, null),
+('Descricao 1 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 1', null, null, null),
+('Descricao 2 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 2', null, null, null),
+('Descricao 3 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 3', null, null, null),
+('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 1', null, null, null),
+('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 2', null, null, null),
+('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 3', null, null, null),
+('1_1', 'Logo', '1', null, null, null, null),
+('1_2', 'Logo', '1', null, null, null, null),
+('1_3', 'Logo', '1', null, null, null, null),
+('2_1', 'Logo', '2', null, null, null, null),
+('2_2', 'Logo', '2', null, null, null, null),
+('2_3', 'Logo', '2', null, null, null, null),
+('3_1', 'Logo', '3', 'TAG 1', null, null, null),
+('3_2', 'Logo', '3', 'TAG 2', null, null, null),
+('3_3', 'Logo', '3', 'TAG 3', null, null, null);
