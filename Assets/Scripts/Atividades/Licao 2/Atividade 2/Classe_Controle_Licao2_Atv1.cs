@@ -13,6 +13,9 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
     public List<string> nomes_empresas;
     public List<string> descricoes_empresas;
     public List<string> tags;
+    public List<string> logos_1;
+    public List<string> logos_2;
+    public List<string> logos_3;
 
 
     public List<List<Vector3>> posicoesNPC = new List<List<Vector3>>();
@@ -31,6 +34,10 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
         nomes_empresas = new List<string>();
         descricoes_empresas = new List<string>();
         tags = new List<string>();
+
+        logos_1 = new List<string>();
+        logos_2 = new List<string>();
+        logos_3 = new List<string>();
 
         posicoes1.Add(new Vector3(-2.50f, 0.7f, 0));
         posicoes1.Add(new Vector3(0.5f, 0.7f, 0));
@@ -75,7 +82,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
             dados.Close();
             comando.Dispose();
 
-            // PEGAR NOMES MASCULINOS E FEMININOS
+            // PEGAR NOMES EMPRESAS
             conexao.Sql = "SELECT CONTEUDO_TEXTO FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Nome' AND CONTEUDO_TAG1 = 'Empresa';";
             comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
             dados = comando.ExecuteReader();
@@ -91,7 +98,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
             dados.Close();
             comando.Dispose();
 
-            // PEGAR SOBRENOMES
+            // PEGAR DESCRICOES
             conexao.Sql = "SELECT CONTEUDO_TEXTO, CONTEUDO_TAG2 FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Descricao' AND CONTEUDO_TAG1 = 'Empresa';";
             comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
             dados = comando.ExecuteReader();
@@ -110,10 +117,8 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
             dados.Close();
             comando.Dispose();
 
-            // PEGAR NASCIONALIDADES
-            // PAROU AQUI
-            // PARA CONTINUAR, RELACIONAR LOGOS COM AS TAGS, AUTOMATICAMENTE, FOR SOBRE QUANTIDADE DE TAGS, PUXANDO CADA TIPO
-            conexao.Sql = "SELECT CONTEUDO_TEXTO, CONTEUDO_TAG1 FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Logo' AND CONTEUDO_TAG1 = '1'; ";
+            // PEGAR LOGOS            
+            conexao.Sql = "SELECT CONTEUDO_TEXTO, CONTEUDO_TAG1, CONTEUDO_TAG2 FROM TB_CONTEUDOS WHERE CONTEUDO_TIPO = 'Logo'; ";
             comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
             dados = comando.ExecuteReader();
 
@@ -121,12 +126,23 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
             {
                 while (dados.Read())
                 {
-                    
-                    //nascionalidades.Add(dados["NASCIONALIDADE"].ToString());
+                    switch (dados["CONTEUDO_TAG1"].ToString())
+                    {
+                        case "1":
+                            logos_1.Add(dados["CONTEUDO_TEXTO"].ToString());                            
+                            break;
+                        case "2":
+                            logos_2.Add(dados["CONTEUDO_TEXTO"].ToString());
+                            break;
+                        case "3":
+                            logos_3.Add(dados["CONTEUDO_TEXTO"].ToString() + "/"+ dados["CONTEUDO_TAG2"].ToString());
+                            break;
+                        default:
+                            print("ERRO BUSCAR LOGOS");
+                            break;
+                    }
                 }
             }
-
-            
 
             dados.Close();
             comando.Dispose();            
@@ -159,7 +175,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
         int rPosicao1;
         int rPosicao2;
         // GERA NPCS
-        /*for (int i = 0; i < nNpcs; i++)
+        for (int i = 0; i < nNpcs; i++)
         {
             rPosicao1 = Random.Range(0, posicoesNPC.Count);
 
@@ -176,7 +192,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
             npcs.Add(npc);
             posicoesNPC[rPosicao1].RemoveAt(rPosicao2);
 
-        }*/
+        }
     }
 
     public void Metodo_Adicionar_Pontos_Licao1_Atv1()
@@ -188,7 +204,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
         {
             conexao.conectarBanco();
 
-            conexao.Sql = "SELECT NIVEL_ATIVIDADE FROM TB_NIVEL_ATIVIDADE WHERE COD_ESTUDANTE=" + player.Cpf + " AND COD_ATIVIDADE=1";
+            conexao.Sql = "SELECT NIVEL_ATIVIDADE FROM TB_NIVEL_ATIVIDADE WHERE COD_ESTUDANTE=" + player.Cpf + " AND COD_ATIVIDADE=2";
             comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
             dados = comando.ExecuteReader();
             int n = 0;

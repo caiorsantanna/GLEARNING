@@ -7,9 +7,14 @@ public class Classe_NPC_Licao2_Atv1 : MonoBehaviour
 {
     int id;
     string nome;
-    string sobrenome;
-    string nascionalidade;
-    string sexo;
+    string descricao;
+    string tag_empresa;
+    Sprite logo_1;
+    Sprite logo_2;
+    Sprite logo_3;
+    //PAROU AQUI
+    //FAZER NPC
+    //GERAR NOME EMPRESA, DESCRICAO, TAG, MECHER NO BANCO PARA FAZER 6 TAGS, LEMBRAR COMO ELE PEGA AS TAGS, GERAR O LOGO
 
     BoxCollider2D colisor;
     SpriteRenderer imagem;
