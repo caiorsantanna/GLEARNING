@@ -284,9 +284,9 @@ INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_
 ('Descricao 1 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 1', null, null, null),
 ('Descricao 2 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 2', null, null, null),
 ('Descricao 3 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 3', null, null, null),
-('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 1', null, null, null),
-('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 2', null, null, null),
-('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 3', null, null, null),
+('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 4', null, null, null),
+('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 5', null, null, null),
+('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 6', null, null, null),
 ('1_1', 'Logo', '1', null, null, null, null),
 ('1_2', 'Logo', '1', null, null, null, null),
 ('1_3', 'Logo', '1', null, null, null, null),
@@ -295,4 +295,7 @@ INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_
 ('2_3', 'Logo', '2', null, null, null, null),
 ('3_1', 'Logo', '3', 'TAG 1', null, null, null),
 ('3_2', 'Logo', '3', 'TAG 2', null, null, null),
-('3_3', 'Logo', '3', 'TAG 3', null, null, null);
+('3_3', 'Logo', '3', 'TAG 3', null, null, null),
+('3_4', 'Logo', '3', 'TAG 4', null, null, null),
+('3_5', 'Logo', '3', 'TAG 5', null, null, null),
+('3_6', 'Logo', '3', 'TAG 6', null, null, null);
