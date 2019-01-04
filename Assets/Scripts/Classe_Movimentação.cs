@@ -7,7 +7,8 @@ public class Classe_Movimentação : MonoBehaviour {
 	SimpleInputNamespace.Joystick joystick;
 	Transform tCamera;
 	Rigidbody2D rPlayer;
-	Animator aPlayer;
+    Animator aPlayer;
+    public Animator aCabelo, aRoupa;
 
 	public bool cima = false, baixo = false, direita = false, esquerda = false;
 	
@@ -16,6 +17,7 @@ public class Classe_Movimentação : MonoBehaviour {
 		tCamera = GameObject.Find("Main Camera").GetComponent<Transform>();				
 		rPlayer = GetComponent<Rigidbody2D>();
 		aPlayer = GetComponent<Animator>();
+        
 	}
 	void FixedUpdate () {
 		float xAxis = joystick.xAxis.value;
@@ -85,5 +87,15 @@ public class Classe_Movimentação : MonoBehaviour {
 		aPlayer.SetBool("esquerda",esquerda);
 		aPlayer.SetBool("cima",cima);
 		aPlayer.SetBool("baixo",baixo);
-	}
+
+        aCabelo.SetBool("direita", direita);
+        aCabelo.SetBool("esquerda", esquerda);
+        aCabelo.SetBool("cima", cima);
+        aCabelo.SetBool("baixo", baixo);
+
+        aRoupa.SetBool("direita", direita);
+        aRoupa.SetBool("esquerda", esquerda);
+        aRoupa.SetBool("cima", cima);
+        aRoupa.SetBool("baixo", baixo);
+    }
 }
