@@ -1040,6 +1040,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 854509874}
     m_Modifications:
+    - target: {fileID: 4698823207995452285, guid: 33d7d0226d9e6d04cb86c5212abdc813,
+        type: 3}
+      propertyPath: m_Text
+      value: Enterprises
+      objectReference: {fileID: 0}
     - target: {fileID: 4698823206980201556, guid: 33d7d0226d9e6d04cb86c5212abdc813,
         type: 3}
       propertyPath: m_Name
@@ -1150,10 +1155,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4698823207995452285, guid: 33d7d0226d9e6d04cb86c5212abdc813,
+    - target: {fileID: 4698823207611253451, guid: 33d7d0226d9e6d04cb86c5212abdc813,
         type: 3}
       propertyPath: m_Text
-      value: Enterprises
+      value: "Atividade 1 - Li\xE7\xE3o 2"
       objectReference: {fileID: 0}
     - target: {fileID: 4698823206707697487, guid: 33d7d0226d9e6d04cb86c5212abdc813,
         type: 3}
@@ -1717,7 +1722,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Atividade 1 - Li\xE7\xE3o 1"
+  m_Text: "Atividade 1 - Li\xE7\xE3o 2"
 --- !u!222 &979310422
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3388,6 +3393,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 771988165}
     m_Modifications:
+    - target: {fileID: 4698823207995452285, guid: 33d7d0226d9e6d04cb86c5212abdc813,
+        type: 3}
+      propertyPath: m_Text
+      value: Who are my employees?
+      objectReference: {fileID: 0}
     - target: {fileID: 4698823206980201556, guid: 33d7d0226d9e6d04cb86c5212abdc813,
         type: 3}
       propertyPath: m_Name
@@ -3497,11 +3507,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698823207995452285, guid: 33d7d0226d9e6d04cb86c5212abdc813,
-        type: 3}
-      propertyPath: m_Text
-      value: Who are my employees?
       objectReference: {fileID: 0}
     - target: {fileID: 4698823206707697489, guid: 33d7d0226d9e6d04cb86c5212abdc813,
         type: 3}

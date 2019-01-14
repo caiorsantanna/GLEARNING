@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Atividades/licao_1_1.unity
     guid: a9a8634c2832a134e8eabc35446f60f9
+  - enabled: 1
+    path: Assets/Scenes/Atividades/licao_2_1.unity
+    guid: 10b020d10175a6b4fbefa33db8536884
   m_configObjects: {}
