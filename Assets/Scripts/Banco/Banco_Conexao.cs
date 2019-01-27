@@ -4,13 +4,18 @@ using MySql.Data.MySqlClient;
 
 public class Banco_Conexao {
 
-	private string linhaConexao = ""+
-		"Server=localhost;"+
-		"Database=glearning;"+
-		"User ID=root;"+
-		"Password=;"+
-		"Pooling=false;";
-	private static MySqlConnection conexaoBanco;
+    private string linhaConexao = "" +
+        "Server=mysql796.umbler.com;" +
+        "Port=41890;" +
+        "Database=banco-ancapvara;" +
+        "Uid=ancapvara;" +
+        "Pwd=ancapvara123qwe;" +
+        "Pooling=false;";
+        //"old guids=true;" +
+        //"charset=utf8_bin" +
+        //"Allow User Variables=True";
+
+    private static MySqlConnection conexaoBanco;
 	private static string sql;
 
     public string Sql

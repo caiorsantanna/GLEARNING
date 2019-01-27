@@ -87,13 +87,13 @@ public class Classe_Chefe_Licao1_Atv1 : MonoBehaviour {
 			GameObject objNpc = controle.npcs[i].gameObject;
 			Classe_NPC_Licao1_Atv1 npc = objNpc.GetComponent<Classe_NPC_Licao1_Atv1>();
 
-			if(npc.Nome.Equals(dpwNome[i].captionText.text)){
+			if(npc.nome.Equals(dpwNome[i].captionText.text)){
 				acertos++;
 			}
-			if(npc.Sexo.Equals(dpwSexo[i].captionText.text)){
+			if(npc.sexo.Equals(dpwSexo[i].captionText.text)){
 				acertos++;
 			}
-			if(npc.Nascionalidade.Equals(dpwNascionalidade[i].captionText.text)){
+			if(npc.nascionalidade.Equals(dpwNascionalidade[i].captionText.text)){
 				acertos++;
 			}
 		}

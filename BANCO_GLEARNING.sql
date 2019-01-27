@@ -2,26 +2,6 @@ CREATE DATABASE GLEARNING;
 
 USE GLEARNING;
 
-/*TABELA DE ROUPAS*/
-CREATE TABLE TB_ROUPA(
-	
-	ROUPA_ID BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	ROUPA_NOME VARCHAR(50) NOT NULL,
-	ROUPA_PRECO DOUBLE NOT NULL,
-	ROUPA_NOMEID VARCHAR(50) NOT NULL
-
-)ENGINE=INNODB;
-
-/*TABELA DE ACESSORIOS*/
-CREATE TABLE TB_ACESSORIO(
-	
-	ACESSORIO_ID BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	ACESSORIO_NOME VARCHAR(50) NOT NULL,
-	ACESSORIO_PRECO DOUBLE NOT NULL,
-	ACESSORIO_NOMEID VARCHAR(50) NOT NULL
-
-)ENGINE=INNODB;
-
 /*TABELA DE USUARIOS ADMNINS*/
 CREATE TABLE TB_USER_ADM (	
 	
@@ -67,10 +47,10 @@ CREATE TABLE TB_USER_ESTUDANTE (
 	USER_ESTUDANTE_PTOTAIS BIGINT NOT NULL,
 	USER_ESTUDANTE_PSEMESTRE BIGINT NOT NULL,
 	USER_ESTUDANTE_PATUAIS BIGINT NOT NULL,
-	COD_ROUPA BIGINT NOT NULL,
-	COD_ACESSORIO BIGINT NOT NULL,
-	CONSTRAINT FOREIGN KEY (COD_ROUPA) REFERENCES TB_ROUPA(ROUPA_ID),
-	CONSTRAINT FOREIGN KEY (COD_ACESSORIO) REFERENCES TB_ACESSORIO(ACESSORIO_ID)
+	USER_ESTUDANTE_PELE VARCHAR(50) NOT NULL,
+	USER_ESTUDANTE_ROUPA VARCHAR(50) NOT NULL,
+	USER_ESTUDANTE_CABELO VARCHAR(50) NOT NULL,
+	USER_ESTUDANTE_ACESSORIO VARCHAR(50) NOT NULL
 
 )ENGINE=INNODB;
 
@@ -125,16 +105,6 @@ CREATE TABLE TB_NIVEL_ATIVIDADE (
 
 /*  ----------- INSERTS ------------- */
 
-INSERT INTO TB_ROUPA(ROUPA_NOME, ROUPA_PRECO, ROUPA_NOMEID) VALUES
-('Roupa normal Masculina', 	10, 	'male_1'),
-('Roupa normal Feminina', 	10, 	'female_1');
-
-INSERT INTO TB_ACESSORIO(ACESSORIO_NOME, ACESSORIO_PRECO, ACESSORIO_NOMEID) VALUES
-('Nada', 		0,	 	'acessory_0'),
-('Chapeu', 		10, 	'acessory_1'),
-('Gravata', 	10, 	'acessory_2'),
-('Flor', 		10, 	'acessory_3');
-
 INSERT INTO TB_USER_ADM(USER_ADM_CPF, USER_ADM_NOME, USER_ADM_LOGIN, USER_ADM_SENHA, USER_ADM_EMAIL) VALUES 
 (10000000001, 'ADMINISTRADOR', 'admin', 'admin', 'admin@gmail.com');
 
@@ -146,13 +116,13 @@ INSERT INTO TB_USER_MONITOR(USER_MONITOR_CPF, USER_MONITOR_NOME, USER_MONITOR_LO
 (30000000001, 'Monitor 1', 'monitor1', 'monitor1', 'monitor1@gmail.com'),
 (30000000002, 'Monitor 2', 'monitor2', 'monitor2', 'monitor2@gmail.com');
 
-INSERT INTO TB_USER_ESTUDANTE(USER_ESTUDANTE_CPF, USER_ESTUDANTE_NOME, USER_ESTUDANTE_LOGIN, USER_ESTUDANTE_SENHA, USER_ESTUDANTE_EMAIL, USER_ESTUDANTE_NIVEL, USER_ESTUDANTE_PTOTAIS, USER_ESTUDANTE_PSEMESTRE, USER_ESTUDANTE_PATUAIS, COD_ROUPA, COD_ACESSORIO) VALUES 
-(40000000001, 'Aluno 1', 'aluno1', 'aluno1', 'aluno1@gmail.com', 1, 10, 5, 5, 1, 1),
-(40000000002, 'Aluno 2', 'aluno2', 'aluno2', 'aluno2@gmail.com', 1, 10, 5, 5, 2, 1),
-(40000000003, 'Aluno 3', 'aluno3', 'aluno3', 'aluno3@gmail.com', 1, 10, 5, 5, 2, 1),
-(40000000004, 'Aluno 4', 'aluno4', 'aluno4', 'aluno4@gmail.com', 1, 10, 5, 5, 2, 1),
-(40000000005, 'Aluno 5', 'aluno5', 'aluno5', 'aluno5@gmail.com', 1, 10, 5, 5, 1, 1),
-(40000000006, 'Aluno 6', 'aluno6', 'aluno6', 'aluno6@gmail.com', 1, 10, 5, 5, 1, 1);
+INSERT INTO TB_USER_ESTUDANTE(USER_ESTUDANTE_CPF, USER_ESTUDANTE_NOME, USER_ESTUDANTE_LOGIN, USER_ESTUDANTE_SENHA, USER_ESTUDANTE_EMAIL, USER_ESTUDANTE_NIVEL, USER_ESTUDANTE_PTOTAIS, USER_ESTUDANTE_PSEMESTRE, USER_ESTUDANTE_PATUAIS, USER_ESTUDANTE_PELE, USER_ESTUDANTE_ROUPA, USER_ESTUDANTE_CABELO, USER_ESTUDANTE_ACESSORIO) VALUES 
+(40000000001, 'Aluno 1', 'aluno1', 'aluno1', 'aluno1@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_1", "C_M_1", "A_1"),
+(40000000002, 'Aluno 2', 'aluno2', 'aluno2', 'aluno2@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_1", "C_F_1", "A_2"),
+(40000000003, 'Aluno 3', 'aluno3', 'aluno3', 'aluno3@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_2", "C_M_2", "A_3"),
+(40000000004, 'Aluno 4', 'aluno4', 'aluno4', 'aluno4@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_2", "C_F_2", "A_4"),
+(40000000005, 'Aluno 5', 'aluno5', 'aluno5', 'aluno5@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_3", "C_M_3", "A_5"),
+(40000000006, 'Aluno 6', 'aluno6', 'aluno6', 'aluno6@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_3", "C_F_3", "A_6");
 
 INSERT INTO TB_SALA(SALA_CODIGO, SALA_NOME, COD_USER_PROFESSOR) VALUES
 ('1234', 'SALA 1', 20000000001),
@@ -275,27 +245,27 @@ INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_
 ('Ukrainian',	'Nacionalidade', null, null, null, null, null),
 ('American',	'Nacionalidade', null, null, null, null, null),
 ('African',	'Nacionalidade', null, null, null, null, null),
-('Nome Empresa 1', 	'Nome','Empresa', 'TAG 1', null, null, null),
-('Nome Empresa 2', 	'Nome','Empresa', 'TAG 2', null, null, null),
-('Nome Empresa 3', 	'Nome','Empresa', 'TAG 3', null, null, null),
-('Nome Empresa 4', 	'Nome','Empresa', 'TAG 4', null, null, null),
-('Nome Empresa 5', 	'Nome','Empresa', 'TAG 5', null, null, null),
-('Nome Empresa 6', 	'Nome','Empresa', 'TAG 6', null, null, null),
-('Descricao 1 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 1', null, null, null),
-('Descricao 2 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 2', null, null, null),
-('Descricao 3 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 3', null, null, null),
-('Descricao 4 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 4', null, null, null),
-('Descricao 5 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 5', null, null, null),
-('Descricao 6 adapsdfh sadf aspfdhasfh poashdfpashf paspdf hpsad',	'Descricao', 'Empresa', 'TAG 6', null, null, null),
+('Special Seeds', 	'Nome','Empresa', 'Seeds', null, null, null),
+('Jenny\'s Coffee Shop', 	'Nome','Empresa', 'Coffee', null, null, null),
+('Field Machines', 	'Nome','Empresa', 'Field Machines', null, null, null),
+('Green Pesticides', 	'Nome','Empresa', 'Pesticides', null, null, null),
+('Star Vet Products', 	'Nome','Empresa', 'Animal Pharmacy', null, null, null),
+('Frozen Fresh', 	'Nome','Empresa', 'Frozen Fruits', null, null, null),
+('We import the best grains and seeds for crops. We work in the whole country',	'Descricao', 'Empresa', 'Seeds', null, null, null),
+('Here you find coffee, sandwiches, soups and fast meals. Don’t miss our scones',	'Descricao', 'Empresa', 'Coffee', null, null, null),
+('This company produces high technology machines, tractors with no drivers and huge tree cutting machines',	'Descricao', 'Empresa', 'Field Machines', null, null, null),
+('This company breeds insects in labs to control devastation in the crops',	'Descricao', 'Empresa', 'Pesticides', null, null, null),
+('It is a specialized pharmacy shop for animal care. We work with pills, syrups and shots',	'Descricao', 'Empresa', 'Animal Pharmacy', null, null, null),
+('Our company works with providing fresh and high quality frozen fruits and vegetables.',	'Descricao', 'Empresa', 'Frozen Fruits', null, null, null),
 ('1_1', 'Logo', '1', null, null, null, null),
 ('1_2', 'Logo', '1', null, null, null, null),
 ('1_3', 'Logo', '1', null, null, null, null),
 ('2_1', 'Logo', '2', null, null, null, null),
 ('2_2', 'Logo', '2', null, null, null, null),
 ('2_3', 'Logo', '2', null, null, null, null),
-('3_1', 'Logo', '3', 'TAG 1', null, null, null),
-('3_2', 'Logo', '3', 'TAG 2', null, null, null),
-('3_3', 'Logo', '3', 'TAG 3', null, null, null),
-('3_4', 'Logo', '3', 'TAG 4', null, null, null),
-('3_5', 'Logo', '3', 'TAG 5', null, null, null),
-('3_6', 'Logo', '3', 'TAG 6', null, null, null);
+('3_1', 'Logo', '3', 'Seeds', null, null, null),
+('3_2', 'Logo', '3', 'Coffee', null, null, null),
+('3_3', 'Logo', '3', 'Field Machines', null, null, null),
+('3_4', 'Logo', '3', 'Pesticides', null, null, null),
+('3_5', 'Logo', '3', 'Animal Pharmacy', null, null, null),
+('3_6', 'Logo', '3', 'Frozen Fruits', null, null, null);

@@ -31,8 +31,7 @@ public class Classe_Cadastro : MonoBehaviour {
 					player.NomeSala = dados["SALA_NOME"].ToString();
 				}
 				dados.Close();           
-				comando.Dispose();
-				conexao.fecharBanco();
+				comando.Dispose();				
 
 				pnl_codigo.SetActive(false);
 				pnl_cadastro_info.SetActive(true);
@@ -41,15 +40,19 @@ public class Classe_Cadastro : MonoBehaviour {
 
 			}else{
 				dados.Close();           
-				comando.Dispose();				
-				conexao.fecharBanco();	
+				comando.Dispose();							
 
 				StartCoroutine(Corrotina_Status_Cadastro("txt_status_codigo"));
 			}
-		}catch{
+
+            conexao.fecharBanco();
+        }
+        catch(MySqlException e){
 			dados.Close();           
-			comando.Dispose();			
-			reconexao.realizarReconexao();			
+			comando.Dispose();
+            conexao.fecharBanco();
+            print(e);
+            //reconexao.realizarReconexao();			
 		}	
 	}
 	// -------------------- Verificar o codigo ---------------------
@@ -84,22 +87,22 @@ public class Classe_Cadastro : MonoBehaviour {
 
 				if(dados.HasRows){
 					dados.Close();
-					comando.Dispose();
-					conexao.fecharBanco();
+					comando.Dispose();					
 					
 					txt_status_info.text = "Email ou cpf já cadastrados! Contate um Administrador.";
 					StartCoroutine(Corrotina_Status_Cadastro("txt_status_info"));
 
 				}else{
-					conexao.conectarBanco();
-					conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_CPF='"+cpf+"';";
+                    dados.Close();
+                    comando.Dispose();
+
+                    conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_CPF='"+cpf+"';";
 					comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 					dados = comando.ExecuteReader();
 
 					if(dados.HasRows){
 						dados.Close();
-						comando.Dispose();
-						conexao.fecharBanco();
+						comando.Dispose();						
 
 						StartCoroutine(Corrotina_Status_Cadastro("txt_status_info"));
 
@@ -109,8 +112,7 @@ public class Classe_Cadastro : MonoBehaviour {
 						player.Cpf = cpf;
 
 						dados.Close();
-						comando.Dispose();
-						conexao.fecharBanco();
+						comando.Dispose();						
 
 						pnl_cadastro_info.SetActive(false);
 						pnl_cadastro_player.SetActive(true);
@@ -118,10 +120,14 @@ public class Classe_Cadastro : MonoBehaviour {
 						sala.text = player.NomeSala;
 					}
 				}
-			}catch{
-				dados.Close();           
-				comando.Dispose();			
-				reconexao.realizarReconexao();			
+                conexao.fecharBanco();
+            }
+            catch(MySqlException e){
+				dados.Close();
+                comando.Dispose();
+                conexao.fecharBanco();
+                print(e);
+                //reconexao.realizarReconexao();			
 			}		
 		}
 	}
@@ -156,35 +162,41 @@ public class Classe_Cadastro : MonoBehaviour {
 
 				if(dados.HasRows){
 					comando.Dispose();
-					dados.Close();
-					conexao.fecharBanco();
+					dados.Close();					
 
 					txt_status_login.text = "Login não disponível! Tente outro.";
 					StartCoroutine(Corrotina_Status_Cadastro("txt_status_login"));
 				}else{
 					comando.Dispose();
-					dados.Close();
-					conexao.fecharBanco();
+					dados.Close();					
 
 					if(tgl_masculino.isOn){
-						player.Roupa = 1;
-					}else if(tgl_feminino.isOn){
-						player.Roupa = 2;
-					}else{
+                        player.Pele = "B_M";
+						player.Roupa = "R_M_Escritorio_1";
+                        player.Cabelo = "C_M_1";                        
+                    }
+                    else if(tgl_feminino.isOn){
+                        player.Pele = "B_F";
+                        player.Roupa = "R_F_Escritorio_1";
+                        player.Cabelo = "C_F_1";                        
+                    }
+                    else{
 						return;
 					}
 
-					player.Acessorio = 1;
+                    comando.Dispose();
+                    dados.Close();
+
+					player.Acessorio = "NULL";
 					player.Nivel = 1;
 					player.Patuais = 0;
 					player.Psemestre = 0;
 					player.Ptotais = 0;
-
-					conexao.conectarBanco();
-					conexao.Sql = "INSERT INTO tb_user_estudante(USER_ESTUDANTE_CPF, USER_ESTUDANTE_NOME, USER_ESTUDANTE_LOGIN, "
+                    
+					conexao.Sql = "INSERT INTO TB_USER_ESTUDANTE (USER_ESTUDANTE_CPF, USER_ESTUDANTE_NOME, USER_ESTUDANTE_LOGIN, "
 					+ "USER_ESTUDANTE_SENHA, USER_ESTUDANTE_EMAIL, USER_ESTUDANTE_NIVEL, USER_ESTUDANTE_PTOTAIS, USER_ESTUDANTE_PSEMESTRE, "
-					+ "USER_ESTUDANTE_PATUAIS, COD_ROUPA, COD_ACESSORIO) VALUES ("
-					+player.Cpf+", "
+					+ "USER_ESTUDANTE_PATUAIS,  USER_ESTUDANTE_PELE, USER_ESTUDANTE_ROUPA, USER_ESTUDANTE_CABELO, USER_ESTUDANTE_ACESSORIO) VALUES ("
+                    + player.Cpf+", "
 					+"'"+player.Nome+"', "
 					+"'"+txt_login.text+"', "
 					+"'"+txt_senha.text+"', "
@@ -193,27 +205,62 @@ public class Classe_Cadastro : MonoBehaviour {
 					+player.Ptotais+", "
 					+player.Psemestre+", "
 					+player.Patuais+", "
-					+player.Roupa+", "
-					+player.Acessorio
-					+");";
+                    +"'"+player.Pele+"', "
+                    +"'"+player.Roupa+"', "
+                    +"'"+player.Cabelo+"', "
+                    +"'"+player.Acessorio
+					+"');";
 					comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 					comando.ExecuteNonQuery();
 
 					comando.Dispose();
 
-					conexao.Sql = "INSERT INTO tb_estudante_sala(COD_ESTUDANTE, COD_SALA) VALUES ("
+					conexao.Sql = "INSERT INTO TB_ESTUDANTE_SALA(COD_ESTUDANTE, COD_SALA) VALUES ("
 					+ player.Cpf+", "+player.CodSala+");";
 					comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 					comando.ExecuteNonQuery();
 
 					comando.Dispose();
-					conexao.fecharBanco();
-				}
 
-			}catch{
+                    List<int> cod_atividades = new List<int>();
+
+                    conexao.Sql = "SELECT ATIVIDADE_ID FROM TB_ATIVIDADES;";
+                    comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
+                    dados = comando.ExecuteReader();
+                    if (dados.HasRows)
+                    {                        
+                        while (dados.Read())
+                        {
+                            cod_atividades.Add(System.Convert.ToInt32(dados["ATIVIDADE_ID"]));
+                        }
+                    }
+
+                    comando.Dispose();
+                    dados.Close();
+
+                    for (int i = 0; i < cod_atividades.ToArray().Length; i++)
+                    {
+                        conexao.Sql = "INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VALUES " +
+                            "(" + player.Cpf + ", " + cod_atividades[i] + ", 1);";
+                        comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
+                        comando.ExecuteNonQuery();
+
+                        comando.Dispose();
+                    }                    
+
+                    comando.Dispose();                    
+
+                    conexao.fecharBanco();
+
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
+                }
+
+			}catch(MySqlException e){
 				dados.Close();           
-				comando.Dispose();			
-				reconexao.realizarReconexao();	
+				comando.Dispose();
+                conexao.fecharBanco();
+                print(e);
+				//reconexao.realizarReconexao();	
 			}
 		}
 		

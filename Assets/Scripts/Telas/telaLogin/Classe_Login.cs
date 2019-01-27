@@ -6,7 +6,12 @@ using MySql.Data.MySqlClient;
 
 public class Classe_Login : MonoBehaviour {
 
-	public GameObject pnl_reconexao;
+    public GameObject pnl_erro;
+    public Text txt_erro;
+
+    
+
+    public GameObject pnl_reconexao;
 	public void Metodo_Logar(){		
 
 		InputField txt_login, txt_senha;
@@ -23,7 +28,7 @@ public class Classe_Login : MonoBehaviour {
 
 		try{
 
-			conexao.conectarBanco();
+			conexao.conectarBanco();            
 
 			/* --------------------------------- ESTUDANTE --------------------------------- */	
 			conexao.Sql = "SELECT * FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_LOGIN='"+txt_login.text+"' AND USER_ESTUDANTE_SENHA='"+txt_senha.text+"';";
@@ -40,8 +45,10 @@ public class Classe_Login : MonoBehaviour {
 					player.Ptotais = System.Convert.ToInt32(dados["USER_ESTUDANTE_PTOTAIS"]);
 					player.Psemestre = System.Convert.ToInt32(dados["USER_ESTUDANTE_PSEMESTRE"]);
 					player.Patuais = System.Convert.ToInt32(dados["USER_ESTUDANTE_PATUAIS"]);
-					player.Roupa = System.Convert.ToInt64(dados["COD_ROUPA"]);
-					player.Acessorio = System.Convert.ToInt64(dados["COD_ACESSORIO"]);
+                    player.Pele = System.Convert.ToString(dados["USER_ESTUDANTE_PELE"]);
+                    player.Roupa = System.Convert.ToString(dados["USER_ESTUDANTE_ROUPA"]);
+                    player.Cabelo = System.Convert.ToString(dados["USER_ESTUDANTE_CABELO"]);
+                    player.Acessorio = System.Convert.ToString(dados["USER_ESTUDANTE_ACESSORIO"]);
 
 					player.TipoLogin = "ESTUDANTE";
 
@@ -67,8 +74,10 @@ public class Classe_Login : MonoBehaviour {
 						player.Ptotais = 0;
 						player.Psemestre = 0;
 						player.Patuais = 0;
-						player.Roupa = 0;
-						player.Acessorio = 0;			
+                        player.Pele = null;
+						player.Roupa = null;
+                        player.Cabelo = null;
+                        player.Acessorio = null;			
 
 						player.TipoLogin = "PROFESSOR";					
 					}
@@ -91,11 +100,13 @@ public class Classe_Login : MonoBehaviour {
 							player.Nivel = 0;
 							player.Ptotais = 0;
 							player.Psemestre = 0;
-							player.Patuais = 0;				
-							player.Roupa = 0;
-							player.Acessorio = 0;
+							player.Patuais = 0;
+                            player.Pele = null;
+                            player.Roupa = null;
+                            player.Cabelo = null;
+                            player.Acessorio = null;
 
-							player.TipoLogin = "MONITOR";
+                            player.TipoLogin = "MONITOR";
 						}
 						
 					}else{
@@ -117,10 +128,12 @@ public class Classe_Login : MonoBehaviour {
 								player.Ptotais = 0;
 								player.Psemestre = 0;
 								player.Patuais = 0;
-								player.Roupa = 0;
-								player.Acessorio = 0;					
+                                player.Pele = null;
+                                player.Roupa = null;
+                                player.Cabelo = null;
+                                player.Acessorio = null;
 
-								player.TipoLogin = "ADM";
+                                player.TipoLogin = "ADM";
 							}
 							
 						}else{
@@ -138,8 +151,10 @@ public class Classe_Login : MonoBehaviour {
 
 			conexao.fecharBanco();
 
-		}catch{
-			reconexao.realizarReconexao();			
+		}catch(MySqlException e){
+            pnl_erro.SetActive(true);
+            txt_erro.text = e.ToString();
+			//reconexao.realizarReconexao();			
 		}		
 
 	}
