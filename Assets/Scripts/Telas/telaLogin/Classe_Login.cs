@@ -11,7 +11,7 @@ public class Classe_Login : MonoBehaviour {
 
     
 
-    public GameObject pnl_reconexao;
+    
 	public void Metodo_Logar(){		
 
 		InputField txt_login, txt_senha;
@@ -20,7 +20,7 @@ public class Classe_Login : MonoBehaviour {
 		txt_senha = GameObject.Find("txt_senha").GetComponent<InputField>();								
 		
 		Banco_Conexao conexao = new Banco_Conexao();
-		Banco_Reconexao reconexao = pnl_reconexao.GetComponent<Banco_Reconexao>();	
+		
 		Objeto_Player player = new Objeto_Player();
 
 		MySqlCommand comando;

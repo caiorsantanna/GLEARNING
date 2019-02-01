@@ -8,15 +8,15 @@ using System.IO;
 
 public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
 {
-    
-    public GameObject NPC;    
+
+    public GameObject NPC;
     public List<GameObject> npcs = new List<GameObject>();
 
     //DROPDOWN DO RELATORIO
     public Dropdown dpw_nomes, dpw_descricoes;
 
     // LISTAGEM DE NOMES E DESCRIÇÕES
-    public Dictionary<string,string> nomes_empresas = new Dictionary<string, string>();
+    public Dictionary<string, string> nomes_empresas = new Dictionary<string, string>();
     public Dictionary<string, string> descricoes_empresas = new Dictionary<string, string>();
     List<string> todos_nomes = new List<string>();
     List<string> todos_descricoes = new List<string>();
@@ -28,7 +28,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
     public Dictionary<string, string> logos_3 = new Dictionary<string, string>();
 
     // TODAS AS POSIÇÕES POSSIVEIS
-    public object[,] posicoes_possiveis = new object[6,2];
+    public object[,] posicoes_possiveis = new object[6, 2];
 
     // LISTAGEM DE POSIÇÕES A SEREM TRABALHADAS
     List<List<Vector3>> posicoesNPC = new List<List<Vector3>>();
@@ -46,15 +46,17 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
     public List<Sprite> cima_c_f = new List<Sprite>();
     public List<Sprite> baixo_c_f = new List<Sprite>();
     // SPRITES BASE
-    public Sprite cima_m, baixo_m, cima_f, baixo_f;        
+    public Sprite cima_m, baixo_m, cima_f, baixo_f;
 
     //VARIVAVEL DO NIVEL DA ATIVIDADE
-    public int nivel = 1;    
+    int nivel = 1; 
 
     //VARIAVEIS DE BANCO
     MySqlCommand comando;
     MySqlDataReader dados;
-    
+
+    public int Nivel { get => nivel; set => nivel = value; }
+
     void Start()
     {   
         //INICIALIZA AS CLASSES 'CONEXAO' E 'PLAYER'

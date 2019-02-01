@@ -139,7 +139,10 @@ INSERT INTO TB_ESTUDANTE_SALA(COD_ESTUDANTE, COD_SALA) VALUES
 INSERT INTO TB_ATIVIDADES(ATIVIDADE_LICAO, ATIVIDADE_NUMERO, ATIVIDADE_NOME) VALUES
 ('Lição 1', '1', 'Lição 1 Atividade 1'),
 ('Lição 2', '1', 'Lição 2 Atividade 1'),
-('Lição 3', '1', 'Lição 3 Atividade 1');
+('Lição 3', '1', 'Lição 3 Atividade 1'),
+('Lição 4', '1', 'Lição 4 Atividade 1'),
+('Lição 5', '1', 'Lição 5 Atividade 1'),
+('Lição 6', '1', 'Lição 6 Atividade 1');
 
 INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VALUES
 (40000000001, 1, 5),
@@ -159,7 +162,25 @@ INSERT INTO TB_NIVEL_ATIVIDADE(COD_ESTUDANTE, COD_ATIVIDADE, NIVEL_ATIVIDADE) VA
 (40000000003, 3, 25),
 (40000000004, 3, 10),
 (40000000005, 3, 22),
-(40000000006, 3, 14);
+(40000000006, 3, 14),
+(40000000001, 4, 5),
+(40000000002, 4, 12),
+(40000000003, 4, 25),
+(40000000004, 4, 10),
+(40000000005, 4, 22),
+(40000000006, 4, 14),
+(40000000001, 5, 5),
+(40000000002, 5, 12),
+(40000000003, 5, 25),
+(40000000004, 5, 10),
+(40000000005, 5, 22),
+(40000000006, 5, 14),
+(40000000001, 6, 5),
+(40000000002, 6, 12),
+(40000000003, 6, 25),
+(40000000004, 6, 10),
+(40000000005, 6, 22),
+(40000000006, 6, 14);
 
 INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_TAG2, CONTEUDO_TAG3, CONTEUDO_TAG4, CONTEUDO_TAG5) VALUES
 ('Liam', 	'Nome', 'Masculino', null, null, null, null),
@@ -275,4 +296,28 @@ INSERT INTO TB_CONTEUDOS(CONTEUDO_TEXTO, CONTEUDO_TIPO, CONTEUDO_TAG1, CONTEUDO_
 ('3_3', 'Logo', '3', 'Field Machines', null, null, null),
 ('3_4', 'Logo', '3', 'Pesticides', null, null, null),
 ('3_5', 'Logo', '3', 'Animal Pharmacy', null, null, null),
-('3_6', 'Logo', '3', 'Frozen Fruits', null, null, null);
+('3_6', 'Logo', '3', 'Frozen Fruits', null, null, null),
+('uma Agua', 'Bebida', 'Licao5_Atv1', 'still water', 'Entrada', null, null),
+('um Cha', 'Bebida', 'Licao5_Atv1', 'iced tea', 'Entrada', null, null),
+('uma Agua com Gás', 'Bebida', 'Licao5_Atv1', 'sparkling water', 'Entrada', null, null),
+('um Cafe', 'Bebida', 'Licao5_Atv1', 'coffee', 'Entrada', null, null),
+('um Coquetel de Martini', 'Bebida', 'Licao5_Atv1', 'martini', 'Entrada', null, null),
+('uma Agua de Coco', 'Bebida', 'Licao5_Atv1', 'coconut water', 'Entrada', null, null),
+('um Suco de Laranja', 'Bebida', 'Licao5_Atv1', 'orange juice', 'Almoco', null, null),
+('um Refrigerante', 'Bebida', 'Licao5_Atv1', 'soda', 'Almoco', null, null),
+('um Vinho Tinto', 'Bebida', 'Licao5_Atv1', 'red wine', 'Almoco', null, null),
+('um Suco de Polpa', 'Bebida', 'Licao5_Atv1', 'fruit juice ', 'Almoco', null, null),
+('um Suco de Frutas com Hortelã', 'Bebida', 'Licao5_Atv1', 'fruit juice with mint', 'Almoco', null, null),
+('um Refrigerante sem Açucar', 'Bebida', 'Licao5_Atv1', 'diet soda', 'Almoco', null, null),
+('uma Salada', 'Comida', 'Licao5_Atv1', 'caesar salad', 'Entrada', null, null),
+('uma Porção de Fritas', 'Comida', 'Licao5_Atv1', 'french fries', 'Entrada', null, null),
+('um Camarão', 'Comida', 'Licao5_Atv1', 'shrimp', 'Entrada', null, null),
+('uma Salada de Galinha', 'Comida', 'Licao5_Atv1', 'chicken salad', 'Entrada', null, null),
+('um Shushi', 'Comida', 'Licao5_Atv1', 'sushi roles', 'Entrada', null, null),
+('uns Cogumelos', 'Comida', 'Licao5_Atv1', 'mushrooms', 'Entrada', null, null),
+('uma Frango Frito', 'Comida', 'Licao5_Atv1', 'fried chichen', 'Almoco', null, null),
+('uma Macarrão', 'Comida', 'Licao5_Atv1', 'pasta', 'Almoco', null, null),
+('um Risoto', 'Comida', 'Licao5_Atv1', 'risotto', 'Almoco', null, null),
+('um Costelas de Porco', 'Comida', 'Licao5_Atv1', 'pork ribs', 'Almoco', null, null),
+('um Bife com Batatas', 'Comida', 'Licao5_Atv1', 'steak with potatoes', 'Almoco', null, null),
+('um Batata Assada', 'Comida', 'Licao5_Atv1', 'baked potato', 'Almoco', null, null);

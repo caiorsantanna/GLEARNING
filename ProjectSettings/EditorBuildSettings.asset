@@ -12,15 +12,27 @@ EditorBuildSettings:
     path: Assets/Scenes/telaLogin.unity
     guid: 7dc3c8d30f69c2b4f867c7493fd8dd3c
   - enabled: 1
-    path: Assets/Scenes/telaPrincipal.unity
-    guid: cafb15eb7a9afc34ab8aa5b0b41b03d9
-  - enabled: 1
     path: Assets/Scenes/telaCadastro.unity
     guid: 53b8aa00af740c54cbfba5e7c893c16b
+  - enabled: 1
+    path: Assets/Scenes/telaPrincipal.unity
+    guid: cafb15eb7a9afc34ab8aa5b0b41b03d9
   - enabled: 1
     path: Assets/Scenes/Atividades/licao_1_1.unity
     guid: a9a8634c2832a134e8eabc35446f60f9
   - enabled: 1
     path: Assets/Scenes/Atividades/licao_2_1.unity
     guid: 10b020d10175a6b4fbefa33db8536884
+  - enabled: 1
+    path: Assets/Scenes/Atividades/licao_3_1.unity
+    guid: ef89a5af7f1722a44a138c3f5e97e942
+  - enabled: 1
+    path: Assets/Scenes/Atividades/licao_4_1.unity
+    guid: 317d7bf6e2d281942a168ce2393116a8
+  - enabled: 1
+    path: Assets/Scenes/Atividades/licao_5_1.unity
+    guid: ca4623b51be035043ba90e0fa30469bd
+  - enabled: 1
+    path: Assets/Scenes/Atividades/licao_6_1.unity
+    guid: 66b9c16bf1beec647afcf13d36ab07b7
   m_configObjects: {}

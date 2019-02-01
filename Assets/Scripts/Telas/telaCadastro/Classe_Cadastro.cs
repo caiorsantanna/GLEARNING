@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using MySql.Data.MySqlClient;
 
 public class Classe_Cadastro : MonoBehaviour {	
-	public GameObject pnl_codigo, pnl_cadastro_info, pnl_cadastro_player, pnl_reconexao;	
+	public GameObject pnl_codigo, pnl_cadastro_info, pnl_cadastro_player;	
 	MySqlDataReader dados;
 	MySqlCommand comando;
 
@@ -13,7 +13,7 @@ public class Classe_Cadastro : MonoBehaviour {
 	public void Metodo_Selecionar_Sala(){		
 		Banco_Conexao conexao = new Banco_Conexao();
 		Objeto_Player player = new Objeto_Player();
-		Banco_Reconexao reconexao = pnl_reconexao.GetComponent<Banco_Reconexao>();
+		
 
 		InputField txt_codigo = GameObject.Find("txt_codigo").GetComponent<InputField>();
 
@@ -61,7 +61,7 @@ public class Classe_Cadastro : MonoBehaviour {
 	public void Metodo_Validar_Info(){
 		Banco_Conexao conexao = new Banco_Conexao();
 		Objeto_Player player = new Objeto_Player();
-		Banco_Reconexao reconexao = pnl_reconexao.GetComponent<Banco_Reconexao>();
+		
 		
 
 		InputField txt_nome = GameObject.Find("txt_nome").GetComponent<InputField>();
@@ -137,7 +137,7 @@ public class Classe_Cadastro : MonoBehaviour {
 	public void Metodo_Validar_Player(){
 		Banco_Conexao conexao = new Banco_Conexao();
 		Objeto_Player player = new Objeto_Player();
-		Banco_Reconexao reconexao = pnl_reconexao.GetComponent<Banco_Reconexao>();
+		
 
 		InputField txt_login = GameObject.Find("txt_login").GetComponent<InputField>();
 		InputField txt_senha = GameObject.Find("txt_senha").GetComponent<InputField>();

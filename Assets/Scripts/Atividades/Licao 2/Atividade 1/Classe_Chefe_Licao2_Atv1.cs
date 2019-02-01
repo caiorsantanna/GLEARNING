@@ -77,12 +77,12 @@ public class Classe_Chefe_Licao2_Atv1 : MonoBehaviour
     public void Metodo_Iniciar_Relatorio()
     {
         Classe_Controle_Licao2_Atv1 controle = GameObject.Find("scripts").GetComponent<Classe_Controle_Licao2_Atv1>();
-
+        print(controle.Nivel);
         //DEFININDO QUANTOS RELATÓRIOS TERAM DE ACORDO COM O NÍVEL
-        switch (controle.nivel)
+        switch (controle.Nivel)
         {
             case 1:
-                pnl_empresa_1.SetActive(true);
+                pnl_empresa_1.SetActive(true);                
                 logo_1_1.sprite = controle.npcs[0].GetComponent<Classe_NPC_Licao2_Atv1>().logo_1;
                 logo_2_1.sprite = controle.npcs[0].GetComponent<Classe_NPC_Licao2_Atv1>().logo_2;
                 logo_3_1.sprite = controle.npcs[0].GetComponent<Classe_NPC_Licao2_Atv1>().logo_3;
@@ -211,7 +211,7 @@ public class Classe_Chefe_Licao2_Atv1 : MonoBehaviour
         descricoes.Add(empresas[5][1]);
 
         //IDENTIFICANDO ACERTOS
-        for (int i = 0; i < controle.nivel * 2; i++)
+        for (int i = 0; i < controle.Nivel * 2; i++)
         {
             GameObject objNpc = controle.npcs[i].gameObject;
             Classe_NPC_Licao2_Atv1 npc = objNpc.GetComponent<Classe_NPC_Licao2_Atv1>();
@@ -227,7 +227,7 @@ public class Classe_Chefe_Licao2_Atv1 : MonoBehaviour
         }
 
         //CALCULANDO PORCENTAGEM DE ACERTOS
-        decimal porcentagem_acertos = (acertos * 100) / ((controle.nivel * 2) * 2);
+        decimal porcentagem_acertos = (acertos * 100) / ((controle.Nivel * 2) * 2);
 
         print(porcentagem_acertos);
 
