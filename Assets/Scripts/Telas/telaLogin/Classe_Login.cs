@@ -32,6 +32,8 @@ public class Classe_Login : MonoBehaviour {
 
 			/* --------------------------------- ESTUDANTE --------------------------------- */	
 			conexao.Sql = "SELECT * FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_LOGIN='"+txt_login.text+"' AND USER_ESTUDANTE_SENHA='"+txt_senha.text+"';";
+			comando = new MySqlCommand("set net_write_timeout=99999; set net_read_timeout=99999", conexao.ConexaoBanco );
+			comando.ExecuteNonQuery();
 			comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 			dados = comando.ExecuteReader();		
 
@@ -154,6 +156,7 @@ public class Classe_Login : MonoBehaviour {
 		}catch(MySqlException e){
             pnl_erro.SetActive(true);
             txt_erro.text = e.ToString();
+			Debug.Log(e.ToString());
 			//reconexao.realizarReconexao();			
 		}		
 

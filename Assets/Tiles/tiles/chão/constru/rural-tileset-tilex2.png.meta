@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 751ca3955f3da5741ab5d17600034faf
-timeCreated: 1540732906
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: rural-tileset-tilex2_0
@@ -260,7 +258,7 @@ TextureImporter:
     21300506: rural-tileset-tilex2_253
     21300508: rural-tileset-tilex2_254
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -278,6 +276,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -288,7 +288,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -300,18 +300,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -320,7 +323,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -329,6 +334,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -346,6 +352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ee745a8d12bbd23489eb0df6e24804a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_1
       rect:
@@ -360,6 +372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 782354a2cf079614d8439e1dd532f000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_2
       rect:
@@ -374,6 +392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 743c4320ddd7fad4cb1421921961ee3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_3
       rect:
@@ -388,6 +412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 376768757c211d144b768e642edf48cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_4
       rect:
@@ -402,6 +432,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fd5fa4ecd544c194fadb3f697248808a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_5
       rect:
@@ -416,6 +452,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8fa469a99e543434da8bbba35848574f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_6
       rect:
@@ -430,6 +472,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63d8088a8e1ca4c4489f7bd29ea69406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_7
       rect:
@@ -444,6 +492,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8dd954988d9666a4e8882eb412f5bf6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_8
       rect:
@@ -458,6 +512,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e728dfda32b118949b6b09c15707dfe1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_9
       rect:
@@ -472,6 +532,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a61ad6c611fe3040a54cc0ef20a822e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_10
       rect:
@@ -486,6 +552,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 53cf3547537a4fd4cb6c5a0f5ade2ac6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_11
       rect:
@@ -500,6 +572,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 41568f670e67c03449d14f1b25b3927f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_12
       rect:
@@ -514,6 +592,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 80479c4a916850748b06a36587eb3df1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_13
       rect:
@@ -528,6 +612,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb87476a52d49aa44ad91a4af4a94c3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_14
       rect:
@@ -542,6 +632,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2bc078374ddb3d4cad5dbc445757126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_15
       rect:
@@ -556,6 +652,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 509722450a696774885eea7732f060c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_16
       rect:
@@ -570,6 +672,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04670c4bf5e2c364f8f6f73b903a0057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_17
       rect:
@@ -584,6 +692,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3ade9bf6c59b61489d8545e79b5e390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_18
       rect:
@@ -598,6 +712,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29c4539522298c44b81a359e8626bc6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_19
       rect:
@@ -612,6 +732,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 93de0104ea3ffa54fa629a72ad31a702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_20
       rect:
@@ -626,6 +752,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d1f57727deb284343bf8fc2afebcc9cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_21
       rect:
@@ -640,6 +772,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f4671d5c32bff6245bad0da20fe7b023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_22
       rect:
@@ -654,6 +792,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a64395d958176541b9e47cc8de5a45c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_23
       rect:
@@ -668,6 +812,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 98350f14210856d43ae1023901040760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_24
       rect:
@@ -682,6 +832,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: db29b3543e05e7f4f8b63e6b047eeb74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_25
       rect:
@@ -696,6 +852,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29f8d05ea2fe7d84088356ac0e359015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_26
       rect:
@@ -710,6 +872,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87eef0b0be3e4974886e8693697ca912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_27
       rect:
@@ -724,6 +892,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 90080611d8349fd49a77c11b17847bf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_28
       rect:
@@ -738,6 +912,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 16ea2d27dc37dd34d86d31e1aa19a4d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_29
       rect:
@@ -752,6 +932,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d4f6bf82af8464c4b983507dff963cdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_30
       rect:
@@ -766,6 +952,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b0cb7423a06257149baa1272a219b7e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_31
       rect:
@@ -780,6 +972,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 98c6b36a531b9aa4da739015a15c78d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_32
       rect:
@@ -794,6 +992,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dd923acb96aad5341a6b79aeb952ff2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_33
       rect:
@@ -808,6 +1012,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7c4d8b10723fc5543a598be079135dbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_34
       rect:
@@ -822,6 +1032,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b46dda00c80b24d4f8fa4a82c6e082f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_35
       rect:
@@ -836,6 +1052,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e3909f2e8f082849bc21a172c6cd10e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_36
       rect:
@@ -850,6 +1072,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9355298270eadd74eba3c3e592facae0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_37
       rect:
@@ -864,6 +1092,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b8f338cf9885e1e40bfd6f0d638a4a17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_38
       rect:
@@ -878,6 +1112,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fb1e1cf9e3fe1aa4b9f6196fdfbc50b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_39
       rect:
@@ -892,6 +1132,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9476970f531b48d47a33a4d47c21e005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_40
       rect:
@@ -906,6 +1152,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 76d3b12dc56b36f4da5d5948c4433c3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_41
       rect:
@@ -920,6 +1172,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 36b12ce0cf697904ead0c7b25b2003f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_42
       rect:
@@ -934,6 +1192,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47bb37e2b1921f0498ddfc11e3077215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_43
       rect:
@@ -948,6 +1212,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ee1cd5a9c9ecfe64fac1c0d5cd12396b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_44
       rect:
@@ -962,6 +1232,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d86929caf9c02fd4a80cbfcfabc6719d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_45
       rect:
@@ -976,6 +1252,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7c835fa87dce1f47aa24b3b1b02c4b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_46
       rect:
@@ -990,6 +1272,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04ab8d67372e3684583983c63af10065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_47
       rect:
@@ -1004,6 +1292,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f8f66363fbeaa74ea628fb74d2a8bd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_48
       rect:
@@ -1018,6 +1312,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dcf7c385611e0ef4299dbfef2de75d2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_49
       rect:
@@ -1032,6 +1332,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: abf35712f50845640bfa440ab8817770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_50
       rect:
@@ -1046,6 +1352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 01d4a22a017a74c499559b07fe0f869f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_51
       rect:
@@ -1060,6 +1372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86838e02e44babf4695ae87c5cd68060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_52
       rect:
@@ -1074,6 +1392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4f1d439c7c5f7914d991156efcfc0bce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_53
       rect:
@@ -1088,6 +1412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a45d19dbfd28edc42861a36f7cb93b74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_54
       rect:
@@ -1102,6 +1432,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d0e2f292280e78c4bb2a0a609ecf1580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_55
       rect:
@@ -1116,6 +1452,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0fddb97b1c374d747a402eaedd8525c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_56
       rect:
@@ -1130,6 +1472,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f87cb54d8ed3ee4ca7e71a7eeb76f0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_57
       rect:
@@ -1144,6 +1492,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f39839e93a30e0b46ac36b9cd3058b3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_58
       rect:
@@ -1158,6 +1512,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 796b43ac0c8cc2a43ae34ed98f67d884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_59
       rect:
@@ -1172,6 +1532,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b9291517ee7e54c449a066e3b06a7224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_60
       rect:
@@ -1186,6 +1552,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25b10d35d50647b419ec8f46c7da9883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_61
       rect:
@@ -1200,6 +1572,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b8ee0ee9005b0814885aee65376a9e4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_62
       rect:
@@ -1214,6 +1592,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 72937feead53b3743bbb5a5eaa489f59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_63
       rect:
@@ -1228,6 +1612,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a95abc18992afe441be7c4ada7879671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_64
       rect:
@@ -1242,6 +1632,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ddb4a45bf84279745870983b6ce7f60e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_65
       rect:
@@ -1256,6 +1652,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf27259a7bc6d419ef99d508a08549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_66
       rect:
@@ -1270,6 +1672,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 50535339d458c1641af7b896cab3501e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_67
       rect:
@@ -1284,6 +1692,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ccb0edd720815d848a2b7582dcfdb3f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_68
       rect:
@@ -1298,6 +1712,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ecc9bb7ba0b1b464cb838d6d2c092cac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_69
       rect:
@@ -1312,6 +1732,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e664816dc03e5db41be73e670b18e679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_70
       rect:
@@ -1326,6 +1752,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d17c39b503c3b7c43bce4aa171453273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_71
       rect:
@@ -1340,6 +1772,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c26086a6b1f46b64f98bc5242826c77a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_72
       rect:
@@ -1354,6 +1792,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d2e07275e7c9f2f44af0f1393143e196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_73
       rect:
@@ -1368,6 +1812,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 914993b56b3ffeb4ea95b7866f266bf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_74
       rect:
@@ -1382,6 +1832,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b5136ef7f1ee04146bde9185d08d6864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_75
       rect:
@@ -1396,6 +1852,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fe0594e323ee7184e92da0dc167e67b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_76
       rect:
@@ -1410,6 +1872,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 18e8d510adcc9f8408ce22881f03e22c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_77
       rect:
@@ -1424,6 +1892,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64787bc8f9fdf4e42aa07ed17c0c0981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_78
       rect:
@@ -1438,6 +1912,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5a30c8543f388ec49b7ab7af18409ae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_79
       rect:
@@ -1452,6 +1932,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5725dcef818008849bb45fda19bb824f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_80
       rect:
@@ -1466,6 +1952,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 99df94ef4862dea4aaeb19689866d0b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_81
       rect:
@@ -1480,6 +1972,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b8acde51c3c947f40aa7bd9e9809c271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_82
       rect:
@@ -1494,6 +1992,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb0485f2ec29a894f8e79a2577314a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_83
       rect:
@@ -1508,6 +2012,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b8a4d78143d259f4383bf3e2f01cb78e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_84
       rect:
@@ -1522,6 +2032,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 778cefb04ea476d40a0313214ff7c4cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_85
       rect:
@@ -1536,6 +2052,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83793d4eba8e4b34d946df11c733226e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_86
       rect:
@@ -1550,6 +2072,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f0553ea8e22672e4c9018ec375092d22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_87
       rect:
@@ -1564,6 +2092,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ec4ad424298776f4fb3f1ce428b2c362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_88
       rect:
@@ -1578,6 +2112,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1bbcdc3710ebea441bb0d25f03adcf1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_89
       rect:
@@ -1592,6 +2132,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8a6634e936e29e409c42958d993992d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_90
       rect:
@@ -1606,6 +2152,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1c8f40536549033428a3c6ebe0b15c14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_91
       rect:
@@ -1620,6 +2172,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dc6dc19208135924f93c47660002bf49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_92
       rect:
@@ -1634,6 +2192,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 500bc0d79fe2eab43a054f8a99629801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_93
       rect:
@@ -1648,6 +2212,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 833fca5422bc87945a64db0eea1e58c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_94
       rect:
@@ -1662,6 +2232,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49501acb686b8a64c9021b4aba1e99c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_95
       rect:
@@ -1676,6 +2252,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 57e5883651e79b84e8e7b69c242df0f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_96
       rect:
@@ -1690,6 +2272,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d5667f947703a58409fda792b355ab33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_97
       rect:
@@ -1704,6 +2292,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1bc12ef6862d2c42b03a96d7ab77e0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_98
       rect:
@@ -1718,6 +2312,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24240e0fde2af08469a41f6aa13d8468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_99
       rect:
@@ -1732,6 +2332,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bb39e9dcd67c29f4987bc8d743a553d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_100
       rect:
@@ -1746,6 +2352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ea89efd007a52e24d9c5cfebb9231f63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_101
       rect:
@@ -1760,6 +2372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f9a31ac7343d2f6448438e792a1daf91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_102
       rect:
@@ -1774,6 +2392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 589123473a303ef4480e565abf2e73eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_103
       rect:
@@ -1788,6 +2412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27f00c7d9f2b2734ab9a0cb97685c8e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_104
       rect:
@@ -1802,6 +2432,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 067c55182f2c9a74ba37d9aaad0cfed7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_105
       rect:
@@ -1816,6 +2452,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 573e6ddd1868fed4a8e491adf650c89e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_106
       rect:
@@ -1830,6 +2472,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 71cb06aca566d4f43a56d3be51d3e3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_107
       rect:
@@ -1844,6 +2492,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8101f415df790ec43a6533dc07688760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_108
       rect:
@@ -1858,6 +2512,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 12507ecd141749e46995bd52e977005a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_109
       rect:
@@ -1872,6 +2532,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 142c5c5b4bafdd044acfd9d48674ef74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_110
       rect:
@@ -1886,6 +2552,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 71e65aa77a83f724caa16525e4cf8065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_111
       rect:
@@ -1900,6 +2572,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 478f32123c03edc47ac156d0e4a14c57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_112
       rect:
@@ -1914,6 +2592,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 74d228b76b1303e459378fcab6d95dc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_113
       rect:
@@ -1928,6 +2612,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7a03f9b28ef6de0419939bdbe3453c17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_114
       rect:
@@ -1942,6 +2632,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62f4a1596247c2c469447472c29f7a21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_115
       rect:
@@ -1956,6 +2652,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cc890230eeb70bd499d25643f349934a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_116
       rect:
@@ -1970,6 +2672,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7d234e3bf0b3be2428e5f192531a8e44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_117
       rect:
@@ -1984,6 +2692,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ff5252e6472efd445abc6b5e568f67a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_118
       rect:
@@ -1998,6 +2712,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cee6f3ee2cffa2f4fb54780579be25ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_119
       rect:
@@ -2012,6 +2732,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6502812a4030de24b8bdf28b321e2d82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_120
       rect:
@@ -2026,6 +2752,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 37e5046bba589e84abddb8670ea5c721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_121
       rect:
@@ -2040,6 +2772,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b8fe997b2bd0c2746a6e2c96285ceb12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_122
       rect:
@@ -2054,6 +2792,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1b9d3e82419fb2d418a40f642374e927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_123
       rect:
@@ -2068,6 +2812,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4550e7cb5cc3a6f43ba4a26197d1fea0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_124
       rect:
@@ -2082,6 +2832,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 56a7dd5be1be36546bd2988b5a826175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_125
       rect:
@@ -2096,6 +2852,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 478cfeff2eb876947bec896950d3a598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_126
       rect:
@@ -2110,6 +2872,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 356e44ad1368c374bbd03bb4e13b6376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_127
       rect:
@@ -2124,6 +2892,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305affd3db1794da74dd5d82b2e7c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_128
       rect:
@@ -2138,6 +2912,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 37ded7e5cfc9e824da2c9049224d5886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_129
       rect:
@@ -2152,6 +2932,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c1ffbb4111902864d857004b4f6b4601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_130
       rect:
@@ -2166,6 +2952,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0314046b370042748a60580f8b2bbe6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_131
       rect:
@@ -2180,6 +2972,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e6f8e4b52d85e54cb7e2e513ecba1c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_132
       rect:
@@ -2194,6 +2992,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 97a7d47cbb03d0547a8601977086c234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_133
       rect:
@@ -2208,6 +3012,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1a05b77c06411b9438011d80dec8f6c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_134
       rect:
@@ -2222,6 +3032,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1789ce10286dcb24bb9df4ba658f06ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_135
       rect:
@@ -2236,6 +3052,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: abae416f4888e8549b442519a3436932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_136
       rect:
@@ -2250,6 +3072,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 160a04c884bd37f4c9d0303c85aee45b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_137
       rect:
@@ -2264,6 +3092,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e502d14e9d417474ba378dbac5147f7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_138
       rect:
@@ -2278,6 +3112,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b9f1d12dce90e344a83d8be5117f3e07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_139
       rect:
@@ -2292,6 +3132,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 76d216fb1ad79e94e98d3332e31fd0cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_140
       rect:
@@ -2306,6 +3152,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7e5bcd8a17a69f548b3090764193e8fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_141
       rect:
@@ -2320,6 +3172,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ff850df0fbab6844a818bbf5fe999915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_142
       rect:
@@ -2334,6 +3192,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 507bbed15bb4df941925ef8c39c92874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_143
       rect:
@@ -2348,6 +3212,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a1df2203cbd4af4e908de13d6a8c6d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_144
       rect:
@@ -2362,6 +3232,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0486682b617cdd04aa2561e0375ecd65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_145
       rect:
@@ -2376,6 +3252,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4856aacd6c20a8d48b6f54f110424ae0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_146
       rect:
@@ -2390,6 +3272,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7907b1274a2ee7d4f92d6fa507eeba79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_147
       rect:
@@ -2404,6 +3292,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ad8caf79d1c6f184bb60032c635ad22e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_148
       rect:
@@ -2418,6 +3312,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bab25b5644bc4ac4aa53eb906c10550c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_149
       rect:
@@ -2432,6 +3332,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5612d29cd4317534084610b5864a2a01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_150
       rect:
@@ -2446,6 +3352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d62cffd60c46984cb0e2f4e93b35326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_151
       rect:
@@ -2460,6 +3372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 329a85083fb3cf141a19a870ac5e3b24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_152
       rect:
@@ -2474,6 +3392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ddb2c52c64c2a2a4095c79a7e6e71904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_153
       rect:
@@ -2488,6 +3412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b0b107ded6175584c8e4c775a19f1b7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_154
       rect:
@@ -2502,6 +3432,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5c6b18c1377529c49a0b7624baaa3aaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_155
       rect:
@@ -2516,6 +3452,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 00695920e5b6f9e4b8fb91d7f6b8b87a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_156
       rect:
@@ -2530,6 +3472,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3dc2e283dba1b714a91c2c956a32dd8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_157
       rect:
@@ -2544,6 +3492,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7ad315d5a19e1ee4584b407997d034dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_158
       rect:
@@ -2558,6 +3512,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 38098b6bd2587e248a9c833b31efc54e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_159
       rect:
@@ -2572,6 +3532,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05c74df74b618cb47888cdae8a6bcdbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_160
       rect:
@@ -2586,6 +3552,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c18ee607296d78b4aa886cffddf5cc3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_161
       rect:
@@ -2600,6 +3572,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4b915d35b0b6624a887f76506550d73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_162
       rect:
@@ -2614,6 +3592,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6deae7bdb119c2148983cd308e98bc7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_163
       rect:
@@ -2628,6 +3612,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d709ab8bf1da3e748916e7b1b067e78f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_164
       rect:
@@ -2642,6 +3632,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3e68bd32b75daff499d6cc8f79f562cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_165
       rect:
@@ -2656,6 +3652,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d78d4d65028ba848ac9c9167fb34dea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_166
       rect:
@@ -2670,6 +3672,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cbeb8ae7abc1be44daea7f2e530f664e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_167
       rect:
@@ -2684,6 +3692,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1ffaf7a69de4ca6489e56b2c03fa4f0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_168
       rect:
@@ -2698,6 +3712,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e3ab2463f890114da64338d3d9c714b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_169
       rect:
@@ -2712,6 +3732,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1eeec91449cda74ba03e34a331f0b5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_170
       rect:
@@ -2726,6 +3752,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a73b1cc83c9e8fc4f844d33a932f823f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_171
       rect:
@@ -2740,6 +3772,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e35ef420148ba08448cb479469172394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_172
       rect:
@@ -2754,6 +3792,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: beda2a5d916c9674394f8d4f9a1aeed1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_173
       rect:
@@ -2768,6 +3812,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 36bb86b56cce95a40adfd3583ecbc54c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_174
       rect:
@@ -2782,6 +3832,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25abe0a92a976214d8bdf11bbe35ccf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_175
       rect:
@@ -2796,6 +3852,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f62749cb3bc430042a80fbd1758c6a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_176
       rect:
@@ -2810,6 +3872,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f545f58ac3cc035429a5198f3ef18098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_177
       rect:
@@ -2824,6 +3892,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1bacf8f9756101b42be347b4cf5983c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_178
       rect:
@@ -2838,6 +3912,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0111e63de5a814143b21d02d5b3aa780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_179
       rect:
@@ -2852,6 +3932,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87ed2b3b91dccbf49acbd6c8090b06fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_180
       rect:
@@ -2866,6 +3952,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1d52e2b8cd51f9c4b9b41139d715d804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_181
       rect:
@@ -2880,6 +3972,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 426f4dd2df7a8e540beac170b716cf99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_182
       rect:
@@ -2894,6 +3992,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8deaa869932b28b49a7e6d7d31e7ccdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_183
       rect:
@@ -2908,6 +4012,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3da4e34e5db1302468c9ef7c32984057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_184
       rect:
@@ -2922,6 +4032,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: efe04b6aff81ccf46abea0339ed13f8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_185
       rect:
@@ -2936,6 +4052,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6203d30c6c602eb46b561706aaedb138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_186
       rect:
@@ -2950,6 +4072,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ef1f651b4b8ff704f826aa68dbdd0ce5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_187
       rect:
@@ -2964,6 +4092,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 73105333f5513954c8ad34dfe52b2d80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_188
       rect:
@@ -2978,6 +4112,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f10a27cffbe7ac54491f831d2ee941c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_189
       rect:
@@ -2992,6 +4132,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 437265066b1f9964fac59635a45ecde9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_190
       rect:
@@ -3006,6 +4152,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4e9ba05713bfb94b9d9d21cbdfec612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_191
       rect:
@@ -3020,6 +4172,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d55bb90c7b25ca44b58e20729aab149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_192
       rect:
@@ -3034,6 +4192,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3f81330fea774864c8fd271552292abb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_193
       rect:
@@ -3048,6 +4212,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d3e54a832109dc64c82e0b36be6d5b3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_194
       rect:
@@ -3062,6 +4232,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ed0f3c6e29508d74bbc0576a393d0b8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_195
       rect:
@@ -3076,6 +4252,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0344ad0750c9831429c85cf66834b99d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_196
       rect:
@@ -3090,6 +4272,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 984bf51eee4d80a4aa063323cf0a1a94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_197
       rect:
@@ -3104,6 +4292,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f14f2a51d57e38479155af1674f2ce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_198
       rect:
@@ -3118,6 +4312,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a12b1b9ddf6a5c14dbf4673f2d88d461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_199
       rect:
@@ -3132,6 +4332,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1053291d964cc84589b5dbb1b6e635f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_200
       rect:
@@ -3146,6 +4352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: feb01bedd07411b429a4f7807293d990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_201
       rect:
@@ -3160,6 +4372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b4a70be6515598e479f45ae4bfe198ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_202
       rect:
@@ -3174,6 +4392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 677a7ce8cc56b274a805ff2767aadc1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_203
       rect:
@@ -3188,6 +4412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d435f2aa17b045f4f986dd86ebad2431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_204
       rect:
@@ -3202,6 +4432,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9bc7b73551d2a1c47b4276bdad73891b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_205
       rect:
@@ -3216,6 +4452,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9c921887043a4004396d0cd489460c9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_206
       rect:
@@ -3230,6 +4472,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9238939b6cf8e92429fa64190ad50081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_207
       rect:
@@ -3244,6 +4492,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ac94bc5b419d094aa1a65f25e4e8385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_208
       rect:
@@ -3258,6 +4512,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24e374297d203be43aff4d8de3606789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_209
       rect:
@@ -3272,6 +4532,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3846355b39606fc4ab4abc36b117a7db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_210
       rect:
@@ -3286,6 +4552,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1986ab382acd44e418f3b1e07a9dac38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_211
       rect:
@@ -3300,6 +4572,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c24b807445ce084ebaee15a5349d389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_212
       rect:
@@ -3314,6 +4592,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aa1525765cd98d84cb33a296cb65b31f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_213
       rect:
@@ -3328,6 +4612,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 37be207f4d360914c8248c2580e325d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_214
       rect:
@@ -3342,6 +4632,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1f2f0a51b9e3a3b4986be21950801993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_215
       rect:
@@ -3356,6 +4652,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f94dcfe878ba846469f4a3b5574fe2ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_216
       rect:
@@ -3370,6 +4672,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a500d07a38d302e499bba2d928f62a30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_217
       rect:
@@ -3384,6 +4692,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 415967ac7ccc03448860d2126ea8c912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_218
       rect:
@@ -3398,6 +4712,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 50ec835782ee6e54d8b24417770e929c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_219
       rect:
@@ -3412,6 +4732,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 92ce2b9e588a67a45a02e6a6f92f7a2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_220
       rect:
@@ -3426,6 +4752,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f6e6019a95cb7f7409314ef8dfd3b981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_221
       rect:
@@ -3440,6 +4772,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0924400bb4a9edd49a6b6e258c9baea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_222
       rect:
@@ -3454,6 +4792,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6ee052681c79a7745b34f5fb285dbeaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_223
       rect:
@@ -3468,6 +4812,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dbf8e0a7e9149d74cae24061217f4dae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_224
       rect:
@@ -3482,6 +4832,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25fd46d39a27245469eb22edab3199b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_225
       rect:
@@ -3496,6 +4852,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 770abc8538a9b3d4a8cf0b7ba7c21645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_226
       rect:
@@ -3510,6 +4872,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3d873f340ce1f640aa19407d84be49c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_227
       rect:
@@ -3524,6 +4892,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c81d7be9349886546afcd9bac6e575c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_228
       rect:
@@ -3538,6 +4912,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cae0e0571b807d545b8ffe51a6dd1c3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_229
       rect:
@@ -3552,6 +4932,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 907a900b51ac14c43a0ca10ef3a7ac8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_230
       rect:
@@ -3566,6 +4952,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24f7dfd332e88554c9ebb228284261f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_231
       rect:
@@ -3580,6 +4972,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 692ee96e06dd44b48bb380081e042a4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_232
       rect:
@@ -3594,6 +4992,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4be08ba45ba649f48914ebd171e88af7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_233
       rect:
@@ -3608,6 +5012,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 79541956b9d0be24b97b1b1e025bf9f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_234
       rect:
@@ -3622,6 +5032,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9cb14d10c94b5ca4a9ca95915fdefe45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_235
       rect:
@@ -3636,6 +5052,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 356bc50a8f03a694b98df3f416de0254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_236
       rect:
@@ -3650,6 +5072,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f409cb98384b1cf42afe422d9f7915e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_237
       rect:
@@ -3664,6 +5092,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bcfdf33f18d9d964192d3fbdf93e5e3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_238
       rect:
@@ -3678,6 +5112,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9e44ae345bdf8d9449bbcb3fdc87e947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_239
       rect:
@@ -3692,6 +5132,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67c823eb0f48940418da50906512aadf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_240
       rect:
@@ -3706,6 +5152,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1d4ac3cec089d541b95c43e90f77dec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_241
       rect:
@@ -3720,6 +5172,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d2691fccb97807c43bfd296f97faa944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_242
       rect:
@@ -3734,6 +5192,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6d6934a2de020449885c88a6afbadc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_243
       rect:
@@ -3748,6 +5212,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66ea7712db1b7674ebbbcb8707e91d9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_244
       rect:
@@ -3762,6 +5232,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82a7738e40f43f44798d9cd5ec90689f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_245
       rect:
@@ -3776,6 +5252,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8cd764f98aa775b41bd066133c6421b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_246
       rect:
@@ -3790,6 +5272,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d6a65d18c9f29a749b21cceebf252379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_247
       rect:
@@ -3804,6 +5292,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29f8a21e0bfaab643959f585969f40a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_248
       rect:
@@ -3818,6 +5312,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: efab59566fdd81e47b8589a5c7504c4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_249
       rect:
@@ -3832,6 +5332,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8ab57f7a92351b042b6dd4e50631180f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_250
       rect:
@@ -3846,6 +5352,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 59c0207b4d2d3df4792fe30ad9e34e9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_251
       rect:
@@ -3860,6 +5372,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1fc35b241ab6ca4c88daaf1951f6ce4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_252
       rect:
@@ -3874,6 +5392,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d0a7cc80fc932ca469f67bd985eaf686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_253
       rect:
@@ -3888,6 +5412,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2001ceacdc1e93e4b84d33d1b5aa7b72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rural-tileset-tilex2_254
       rect:
@@ -3902,9 +5432,23 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 93162bfff92d8614dac0f8387e864349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

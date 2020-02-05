@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 9d423b2d2acff634a940c9dfb1530dca
-timeCreated: 1540515006
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: december_doors_by_nicnubill-d7128ej_0
@@ -93,7 +91,7 @@ TextureImporter:
     21300172: december_doors_by_nicnubill-d7128ej_86
     21300174: december_doors_by_nicnubill-d7128ej_87
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -111,6 +109,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -133,18 +133,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -153,7 +156,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -162,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -179,6 +185,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d8cb6121c3caa7746a2bb7d403580df3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_1
       rect:
@@ -193,6 +205,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b1ec0f48fd47fbf4ba7b2ab6fee63c48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_2
       rect:
@@ -207,6 +225,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9361ed0f6131392479bccebdcfcd639e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_3
       rect:
@@ -221,6 +245,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a161459c90ed3df42bd3d647de7bb96c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_4
       rect:
@@ -235,6 +265,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9b66fe32dc6d2f44af689888eacf787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_5
       rect:
@@ -249,6 +285,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 850651af7a2eed44e8f189e938863971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_6
       rect:
@@ -263,6 +305,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d95194a1a0681843b28ed6d123a9a8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_7
       rect:
@@ -277,6 +325,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3daec48aa13ed5446a81536754f53f40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_8
       rect:
@@ -291,6 +345,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3ae4710305b5d6c47a6e38bc24813aa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_9
       rect:
@@ -305,6 +365,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: de31d34d5d7f89b479c6364c542a2118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_10
       rect:
@@ -319,6 +385,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 40a3a0cd88d500f4fa431926a6179b22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_11
       rect:
@@ -333,6 +405,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 312934be38833e14bb81a3497613f9bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_12
       rect:
@@ -347,6 +425,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1f2d2a2f6ca450e4389335cf50028e82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_13
       rect:
@@ -361,6 +445,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 60978e641c5e09246b4c22496c78662b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_14
       rect:
@@ -375,6 +465,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 426bc3638851d1c4987d670da58db51e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_15
       rect:
@@ -389,6 +485,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 11a00c82ed73a0a48bf6e6f6115a61d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_16
       rect:
@@ -403,6 +505,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 80672437e8b8d6d4cbb597f29c21c609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_17
       rect:
@@ -417,6 +525,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 52ffb3f35626824478c5619cc3236c76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_18
       rect:
@@ -431,6 +545,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 199b9bb037db3374ba25a458eed15fbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_19
       rect:
@@ -445,6 +565,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27645dea6f9c7734fb60600ed0cdd894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_20
       rect:
@@ -459,6 +585,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7c1e81fd800d96744a8e608344bc9774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_21
       rect:
@@ -473,6 +605,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e0dc67425293d7745aa5ce9ddedaa311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_22
       rect:
@@ -487,6 +625,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b475381506b80d8439e2bc6ea44b9545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_23
       rect:
@@ -501,6 +645,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5e58f03a9dc17f45805acda12b90a35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_24
       rect:
@@ -515,6 +665,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c5e86ef3286dbf4cac0381c186e6501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_25
       rect:
@@ -529,6 +685,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8c32fc86823c164d94fa506866348d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_26
       rect:
@@ -543,6 +705,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3801b27ed4604eb43b414e6bd238e120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_27
       rect:
@@ -557,6 +725,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4df9e5cff4dc39d41af5a3df3236e530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_28
       rect:
@@ -571,6 +745,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a27d3e36d0185564cadff1441f86362d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_29
       rect:
@@ -585,6 +765,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d549d42372360a84fbb7f2cf7b746be2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_30
       rect:
@@ -599,6 +785,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 13303915674a5c447bb20ad2a6414742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_31
       rect:
@@ -613,6 +805,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7994cfa573b65c147af0e7aebd74d814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_32
       rect:
@@ -627,6 +825,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 96ee543fbab346845a41a76560a4e4e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_33
       rect:
@@ -641,6 +845,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4fa2a78a45521b149b9d79b664923d69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_34
       rect:
@@ -655,6 +865,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64f179b04e3e064468a6988a8e9e1fb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_35
       rect:
@@ -669,6 +885,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2491eabb04766b4fa818ec53b04b385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_36
       rect:
@@ -683,6 +905,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2fe07034acfd5047b2c627d587846a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_37
       rect:
@@ -697,6 +925,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22ad9c22f4d5d2949b7dd84c3385a6e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_38
       rect:
@@ -711,6 +945,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9146b0107a9456b4896dc981b61862ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_39
       rect:
@@ -725,6 +965,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4395375d1e406274ea2e1b005053666d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_40
       rect:
@@ -739,6 +985,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45d2429fe8d7a18469469fa1e825ed67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_41
       rect:
@@ -753,6 +1005,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e05710cc2e5cfd42b7fe30ab541b36c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_42
       rect:
@@ -767,6 +1025,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7c8e8da9d27f9e5478d0a8c048b347ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_43
       rect:
@@ -781,6 +1045,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0ff2ed215b348bc4a9b5e298458177e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_44
       rect:
@@ -795,6 +1065,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fe54fdfe7b8870e46a26829240f0cb03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_45
       rect:
@@ -809,6 +1085,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 946d5c6f69e7cd142aa2651ee139f402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_46
       rect:
@@ -823,6 +1105,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ce59e64602a4c54e8b9931bf601cfb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_47
       rect:
@@ -837,6 +1125,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06a3eb9ed7348a745a468212e149441e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_48
       rect:
@@ -851,6 +1145,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c371f8440613ae4e9d97158ccc7c420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_49
       rect:
@@ -865,6 +1165,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d2f53115032cff4194d599d65bb93a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_50
       rect:
@@ -879,6 +1185,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5d9b6148e0be29a498253a5a62c97857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_51
       rect:
@@ -893,6 +1205,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 381bb990813753d4a913f62a5a5dd4fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_52
       rect:
@@ -907,6 +1225,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4711c769b4623db4b8b2243cd4019007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_53
       rect:
@@ -921,6 +1245,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dbd5ea2a39367774caeb8437711bd261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_54
       rect:
@@ -935,6 +1265,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac18ef7ff33fd5f4f9fce739b9910307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_55
       rect:
@@ -949,6 +1285,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0614f6a83285bb342b8e124c54bd30e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_56
       rect:
@@ -963,6 +1305,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fb3b7e507789e5b468d4a45846c402c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_57
       rect:
@@ -977,6 +1325,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: df9ac83147a2428418422a4db243546d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_58
       rect:
@@ -991,6 +1345,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9fa72503192dc6a4181d5219d399b16c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_59
       rect:
@@ -1005,6 +1365,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cdf5142358a07474b9070cb62cf6d19f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_60
       rect:
@@ -1019,6 +1385,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6fae3eb7a69f6414f8d34e9a1fffe8fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_61
       rect:
@@ -1033,6 +1405,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd77d9d2a8086644aa47a58f3778a8bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_62
       rect:
@@ -1047,6 +1425,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 01c0ca2c115af444e8da252231ba90d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_63
       rect:
@@ -1061,6 +1445,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c84fa7a7618ff6646a3ab50b2285a790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_64
       rect:
@@ -1075,6 +1465,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b51a797b2d5c2343877f509ce44b18f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_65
       rect:
@@ -1089,6 +1485,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f53a6e571b69e884da78aff70322d8d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_66
       rect:
@@ -1103,6 +1505,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: de1e3f4918c959c4daf2587fdbfa3c47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_67
       rect:
@@ -1117,6 +1525,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 074bd54ddea6072459828f0b2a1d63a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_68
       rect:
@@ -1131,6 +1545,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd726261bda0b9040be1079e84f6d935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_69
       rect:
@@ -1145,6 +1565,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a848cc53b8fcc8340b0e47627932aab2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_70
       rect:
@@ -1159,6 +1585,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 58a25d9ea2180f049b088b69c9749fa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_71
       rect:
@@ -1173,6 +1605,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bb3706c22ca432f489208385239474c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_72
       rect:
@@ -1187,6 +1625,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c573b8b10d948a546b4acc140a5dc951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_73
       rect:
@@ -1201,6 +1645,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fdc98618d1245ac4a918226a60340b8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_74
       rect:
@@ -1215,6 +1665,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c165ce367e9bee14da35484ebcb85acd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_75
       rect:
@@ -1229,6 +1685,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3eae83c3490e0c04b955b60cb74a30d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_76
       rect:
@@ -1243,6 +1705,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 90c3f18f775a04941b4cdb7f5a13d92d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_77
       rect:
@@ -1257,6 +1725,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26c8f9fb688e3564ba32d25d3c81d966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_78
       rect:
@@ -1271,6 +1745,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 58297cbdf7b0b9347b14daa9ffcab501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_79
       rect:
@@ -1285,6 +1765,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab7cb9c902292b2489f1832c64817a44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_80
       rect:
@@ -1299,6 +1785,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6bf00fd7f5dba894abbcf17a13f32cf5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_81
       rect:
@@ -1313,6 +1805,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bb809ef6601247243bc15a23d666b152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_82
       rect:
@@ -1327,6 +1825,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 00d92ed14d584564985ce2f56846a6d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_83
       rect:
@@ -1341,6 +1845,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 871c9622f26e23d46873cfaa874ed425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_84
       rect:
@@ -1355,6 +1865,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e128116859835e34e91b4aa872b41d1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_85
       rect:
@@ -1369,6 +1885,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e9f2bb64fca784459b9208a220cb3b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_86
       rect:
@@ -1383,6 +1905,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b5d3a832a930ef4f802ac246085b06d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: december_doors_by_nicnubill-d7128ej_87
       rect:
@@ -1397,9 +1925,23 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 94bdc73988b7f4547a00c73073491216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

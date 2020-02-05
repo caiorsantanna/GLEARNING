@@ -4,47 +4,45 @@ using MySql.Data.MySqlClient;
 
 public class Banco_Conexao {
 
-    private string linhaConexao = "" +
-        "Server=mysql796.umbler.com;" +
-        "Port=41890;" +
-        "Database=banco-ancapvara;" +
-        "Uid=ancapvara;" +
-        "Pwd=ancapvara123qwe;" +
-        "Pooling=false;";
-        //"old guids=true;" +
-        //"charset=utf8_bin" +
-        //"Allow User Variables=True";
+	private string linhaConexao = @"
+	Server=remotemysql.com;
+	Port=3306;
+	Database=zhNFF45xCl;
+	Uid=zhNFF45xCl;
+	Pwd=yKDAxoNiWA;
+	Pooling=false;
+	old guids=true;
+	AllowUserVariables=True;
+	charset=utf8;";
 
-    private static MySqlConnection conexaoBanco;
+  private static MySqlConnection conexaoBanco;
 	private static string sql;
 
-    public string Sql
-    {
-        get
-        {
-            return sql;
-        }
+	public string Sql
+	{
+		get
+		{
+			return sql;
+		}
+		set
+		{
+			sql = value;
+		}
+	}
 
-        set
-        {
-            sql = value;
-        }
-    }
+	public MySqlConnection ConexaoBanco
+	{
+		get
+		{
+			return conexaoBanco;
+		}
+		set
+		{
+			conexaoBanco = value;
+		}
+	}
 
-    public MySqlConnection ConexaoBanco
-    {
-        get
-        {
-            return conexaoBanco;
-        }
-
-        set
-        {
-            conexaoBanco = value;
-        }
-    }
-
-    public void conectarBanco(){
+	public void conectarBanco(){
 		ConexaoBanco = new MySqlConnection(this.linhaConexao);
 		ConexaoBanco.Open();
 		//print("Conexao Banco: "+conexaoBanco.State);
