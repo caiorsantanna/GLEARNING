@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Atividades/licao_8_1.unity
+- path: Assets/Scenes/telaCadastro.unity
   isLoaded: 1
   isActive: 1

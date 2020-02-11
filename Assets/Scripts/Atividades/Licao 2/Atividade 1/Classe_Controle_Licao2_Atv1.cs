@@ -9,6 +9,7 @@ using System.IO;
 public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
 {
 
+    public GameObject pnl_loading;
     public GameObject NPC;
     public List<GameObject> npcs = new List<GameObject>();
 
@@ -386,6 +387,7 @@ public class Classe_Controle_Licao2_Atv1 : MonoBehaviour
 
     public void Metodo_Voltar_Menu_Principal()
     {
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 }

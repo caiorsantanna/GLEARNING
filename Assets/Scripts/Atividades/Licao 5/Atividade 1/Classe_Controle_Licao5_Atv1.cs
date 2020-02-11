@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Classe_Controle_Licao5_Atv1 : MonoBehaviour
 {
+    public GameObject pnl_loading;
     public Text txt_dialogo, txt_dialogo_waiter;
     public Dropdown dpw_comidas, dpw_bebidas;
     public GameObject pnl_dialogo_inicial, pnl_acertos;
@@ -272,6 +273,7 @@ public class Classe_Controle_Licao5_Atv1 : MonoBehaviour
 
     public void Metodo_Voltar_Menu_Principal()
     {
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 

@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 
 public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 
+    public GameObject pnl_loading;
     //VARIAVEIS DE PRAFAB E LISTAGEM DE NPCS
     public GameObject NPC;
     public List<GameObject> npcs = new List<GameObject>();
@@ -367,6 +368,7 @@ public class Classe_Controle_Licao1_Atv1 : MonoBehaviour {
 
     public void Metodo_Voltar_Menu_Principal()
     {
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 }

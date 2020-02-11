@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Classe_Controle_Licao4_Atv1 : MonoBehaviour
 {
-
+    public GameObject pnl_loading;
     public GameObject gameobject_eventos, scroll_object, pnl_task_L4A1, canvas, pnl_tudo, pnl_acertos;
 
     public List<GameObject> todos_eventos = new List<GameObject>();
@@ -221,6 +221,7 @@ public class Classe_Controle_Licao4_Atv1 : MonoBehaviour
     public void Metodo_Voltar_Menu_Principal()
     {
         Time.timeScale = 1f;
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 

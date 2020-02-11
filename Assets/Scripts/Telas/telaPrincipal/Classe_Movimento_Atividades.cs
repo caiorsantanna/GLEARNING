@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Classe_Movimento_Atividades : MonoBehaviour {    
+public class Classe_Movimento_Atividades : MonoBehaviour {
 
     float offsetx, offsety;
     float offsetx_tudo, offsety_tudo;
@@ -32,7 +32,7 @@ public class Classe_Movimento_Atividades : MonoBehaviour {
     }
 
     public void MoverUIVertical()
-    {        
+    {
         this.transform.position = new Vector3(this.transform.position.x, offsety + Input.mousePosition.y, 0);
     }
 }

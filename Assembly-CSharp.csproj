@@ -56,6 +56,9 @@
      <Compile Include="Assets\Scripts\Atividades\Licao 1\Atividade 1\Classe_Chefe_Licao1_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 1\Atividade 1\Classe_Controle_Licao1_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 1\Atividade 1\Classe_NPC_Licao1_Atv1.cs" />
+     <Compile Include="Assets\Scripts\Atividades\Licao 10\Atividade 1\Classe_Controle_Licao10_Atv1.cs" />
+     <Compile Include="Assets\Scripts\Atividades\Licao 11\Atividade 1\Classe_Controle_Licao11_Atv1.cs" />
+     <Compile Include="Assets\Scripts\Atividades\Licao 12\Atividade 1\Classe_Controle_Licao12_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 2\Atividade 1\Classe_Chefe_Licao2_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 2\Atividade 1\Classe_Controle_Licao2_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 2\Atividade 1\Classe_NPC_Licao2_Atv1.cs" />
@@ -75,6 +78,8 @@
      <Compile Include="Assets\Scripts\Atividades\Licao 6\Atividade 1\Classe_Player_Licao6_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 7\Atividade 1\Classe_Controle_Licao7_Atv1.cs" />
      <Compile Include="Assets\Scripts\Atividades\Licao 8\Atividade 1\Classe_Controle_Licao8_Atv1.cs" />
+     <Compile Include="Assets\Scripts\Atividades\Licao 8\Atividade 1\Classe_Job.cs" />
+     <Compile Include="Assets\Scripts\Atividades\Licao 9\Atividade 1\Classe_Controle_Licao9_Atv1.cs" />
      <Compile Include="Assets\Scripts\Banco\Banco_Conexao.cs" />
      <Compile Include="Assets\Scripts\Banco\Banco_Reconexao.cs" />
      <Compile Include="Assets\Scripts\Classe_Movimentação.cs" />

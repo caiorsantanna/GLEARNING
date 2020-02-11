@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
 {
+    public GameObject pnl_loading;
     public List<GameObject> spots_moedas = new List<GameObject>();
     public GameObject spots_moedas_object, hotel_1, hotel_2, hotel_3, hotel_4, pnl_tudo, pnl_acertos;
     public Transform Player, ponto;
@@ -24,11 +25,11 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
     public int moedas = 0;
 
     bool tempo_correndo = false;
-    float tempo = 180;
+    float tempo = 300;
 
     //VARIAVEIS DE BANCO
     MySqlCommand comando;
-    MySqlDataReader dados;   
+    MySqlDataReader dados;
 
     void Start()
     {
@@ -208,6 +209,7 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
     public void Metodo_Voltar_Menu_Principal()
     {
         Time.timeScale = 1f;
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 

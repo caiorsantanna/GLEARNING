@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Classe_Controle_Licao6_Atv1 : MonoBehaviour
 {
+    public GameObject pnl_loading;
     public Image img_foto_1, img_foto_2, img_foto_3, img_foto_4, img_foto_5, img_foto_6, img_foto_7, img_foto_8;
     public Text txt_foto_1, txt_foto_2, txt_foto_3, txt_foto_4, txt_foto_5, txt_foto_6, txt_foto_7, txt_foto_8;
 
@@ -274,6 +275,7 @@ public class Classe_Controle_Licao6_Atv1 : MonoBehaviour
 
     public void Metodo_Voltar_Menu_Principal()
     {
+        pnl_loading.SetActive(true);
         UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 }

@@ -6,6 +6,7 @@
 
 	public class Classe_Controle_Licao7_Atv1 : MonoBehaviour
 	{
+    public GameObject pnl_loading;
     public GameObject pnl_main, pnl_acertos;
 		public Text question, answer1, answer2, answer3;
     public Image img_estrela_1, img_estrela_2, img_estrela_3;
@@ -238,6 +239,7 @@
 
     public void Metodo_Voltar_Menu_Principal()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
+      pnl_loading.SetActive(true);
+      UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
     }
 	}
