@@ -113,12 +113,12 @@ INSERT INTO TB_USER_MONITOR(USER_MONITOR_CPF, USER_MONITOR_NOME, USER_MONITOR_LO
 (30000000002, 'Monitor 2', 'monitor2', 'monitor2', 'monitor2@gmail.com');
 
 INSERT INTO TB_USER_ESTUDANTE(USER_ESTUDANTE_CPF, USER_ESTUDANTE_NOME, USER_ESTUDANTE_LOGIN, USER_ESTUDANTE_SENHA, USER_ESTUDANTE_EMAIL, USER_ESTUDANTE_NIVEL, USER_ESTUDANTE_PTOTAIS, USER_ESTUDANTE_PSEMESTRE, USER_ESTUDANTE_PATUAIS, USER_ESTUDANTE_PELE, USER_ESTUDANTE_ROUPA, USER_ESTUDANTE_CABELO, USER_ESTUDANTE_ACESSORIO) VALUES 
-(40000000001, 'Aluno 1', 'aluno1', 'aluno1', 'aluno1@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_1", "C_M_1", "A_1"),
-(40000000002, 'Aluno 2', 'aluno2', 'aluno2', 'aluno2@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_1", "C_F_1", "A_2"),
-(40000000003, 'Aluno 3', 'aluno3', 'aluno3', 'aluno3@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_2", "C_M_2", "A_3"),
-(40000000004, 'Aluno 4', 'aluno4', 'aluno4', 'aluno4@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_2", "C_F_2", "A_4"),
-(40000000005, 'Aluno 5', 'aluno5', 'aluno5', 'aluno5@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_3", "C_M_3", "A_5"),
-(40000000006, 'Aluno 6', 'aluno6', 'aluno6', 'aluno6@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_3", "C_F_3", "A_6");
+(40000000001, 'Aluno 1', 'aluno1', md5('aluno1'), 'aluno1@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_1", "C_M_1", "A_1"),
+(40000000002, 'Aluno 2', 'aluno2', md5('aluno2'), 'aluno2@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_1", "C_F_1", "A_2"),
+(40000000003, 'Aluno 3', 'aluno3', md5('aluno3'), 'aluno3@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_2", "C_M_2", "A_3"),
+(40000000004, 'Aluno 4', 'aluno4', md5('aluno4'), 'aluno4@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_2", "C_F_2", "A_4"),
+(40000000005, 'Aluno 5', 'aluno5', md5('aluno5'), 'aluno5@gmail.com', 1, 10, 5, 5, "B_M", "R_M_Escritorio_3", "C_M_3", "A_5"),
+(40000000006, 'Aluno 6', 'aluno6', md5('aluno6'), 'aluno6@gmail.com', 1, 10, 5, 5, "B_F", "R_F_Escritorio_3", "C_F_3", "A_6");
 
 INSERT INTO TB_SALA(SALA_CODIGO, SALA_NOME, COD_USER_PROFESSOR) VALUES
 ('1234', 'SALA 1', 20000000001),

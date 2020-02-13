@@ -67,10 +67,6 @@ public class Classe_Cadastro : MonoBehaviour {
 		InputField txt_cpf = GameObject.Find("txt_cpf").GetComponent<InputField>();
 		Text txt_status_info = GameObject.Find("txt_status_info").GetComponent<Text>();
 
-		string nome = txt_nome.text;
-		string email = txt_email.text;
-		long cpf = System.Convert.ToInt64(txt_cpf.text);
-
 		if((txt_nome.text == "")||(txt_email.text == "")||(txt_cpf.text == "")){
 
 			txt_status_info.text = "Um dos campos está em branco!";
@@ -79,7 +75,7 @@ public class Classe_Cadastro : MonoBehaviour {
 		}else{
 			try{
 				conexao.conectarBanco();
-				conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_EMAIL='"+email+"';";
+				conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_EMAIL='"+txt_email.text+"';";
 				comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 				dados = comando.ExecuteReader();
 
@@ -94,7 +90,7 @@ public class Classe_Cadastro : MonoBehaviour {
 					dados.Close();
 					comando.Dispose();
 
-					conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_CPF='"+cpf+"';";
+					conexao.Sql = "SELECT USER_ESTUDANTE_CPF FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_CPF='"+txt_cpf.text+"';";
 					comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 					dados = comando.ExecuteReader();
 
@@ -105,9 +101,9 @@ public class Classe_Cadastro : MonoBehaviour {
 						StartCoroutine(Corrotina_Status_Cadastro("txt_status_info"));
 
 					}else{
-						player.Nome = nome;
-						player.Email = email;
-						player.Cpf = cpf;
+						player.Nome = txt_nome.text;
+						player.Email = txt_email.text;
+						player.Cpf = System.Convert.ToInt64(txt_cpf.text);
 
 						dados.Close();
 						comando.Dispose();
@@ -138,8 +134,8 @@ public class Classe_Cadastro : MonoBehaviour {
 
 		InputField txt_login = GameObject.Find("txt_login").GetComponent<InputField>();
 		InputField txt_senha = GameObject.Find("txt_senha").GetComponent<InputField>();
-		InputField txt_status_login = GameObject.Find("txt_status_login").GetComponent<InputField>();
-		InputField txt_status_senha = GameObject.Find("txt_status_senha").GetComponent<InputField>();
+		Text txt_status_login = GameObject.Find("txt_status_login").GetComponent<Text>();
+		Text txt_status_senha = GameObject.Find("txt_status_senha").GetComponent<Text>();
 
 		Toggle tgl_masculino = GameObject.Find("tgl_masculino").GetComponent<Toggle>();
 		Toggle tgl_feminino = GameObject.Find("tgl_feminino").GetComponent<Toggle>();
@@ -175,7 +171,7 @@ public class Classe_Cadastro : MonoBehaviour {
 					else if(tgl_feminino.isOn){
 							player.Pele = "B_F";
 							player.Roupa = "R_F_Escritorio_1";
-							player.Cabelo = "C_F_1";
+							player.Cabelo = "C_F_7";
 					}
 					else{
 						return;
@@ -198,7 +194,7 @@ public class Classe_Cadastro : MonoBehaviour {
 					+ player.Cpf+", "
 					+"'"+player.Nome+"', "
 					+"'"+txt_login.text+"', "
-					+"'"+txt_senha.text+"', "
+					+"md5('"+txt_senha.text+"'), "
 					+"'"+player.Email+"', "
 					+player.Nivel+", "
 					+player.Ptotais+", "

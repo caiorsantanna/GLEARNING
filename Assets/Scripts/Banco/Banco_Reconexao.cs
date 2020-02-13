@@ -4,9 +4,9 @@ using MySql.Data.MySqlClient;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Banco_Reconexao : MonoBehaviour {	
-	public GameObject pnl_reconexao, pnl_tudo;		
-    
+public class Banco_Reconexao : MonoBehaviour {
+	public GameObject pnl_reconexao, pnl_tudo;
+
     public void realizarReconexao(){
 
 		/*
@@ -30,9 +30,10 @@ public class Banco_Reconexao : MonoBehaviour {
 		StartCoroutine(reconexao());
 	}
 
-	IEnumerator reconexao(){				
+	IEnumerator reconexao(){
 
-		Text txt_tentativas = GameObject.Find("txt_tentativas").GetComponent<Text>();
+		yield return new WaitForSeconds(1);
+		/*Text txt_tentativas = GameObject.Find("txt_tentativas").GetComponent<Text>();
 		Text txt_contador = GameObject.Find("txt_contador").GetComponent<Text>();
 
 		int contador = 10;
@@ -46,12 +47,12 @@ public class Banco_Reconexao : MonoBehaviour {
 			segundosAtuais = segundos;
 			txt_tentativas.text = "("+(i+1)+"/"+contador+")";
 			txt_contador.text = segundosAtuais.ToString()+" s.";
-			
-			while(segundosAtuais > 0){							
-				txt_contador.text = segundosAtuais.ToString()+" s.";				
+
+			while(segundosAtuais > 0){
+				txt_contador.text = segundosAtuais.ToString()+" s.";
 				segundosAtuais--;
 				yield return new WaitForSeconds(1);
-			}				
+			}
 
 			WWW www = new WWW(url);
 			yield return www;
@@ -62,16 +63,16 @@ public class Banco_Reconexao : MonoBehaviour {
 				yield break;
 			}else{
 				segundosAtuais = segundos;
-				print(www.error);				
+				print(www.error);
 			}
 		}
 
 		if(i >= 5){
-			UnityEngine.SceneManagement.SceneManager.LoadScene("telaLogin");	
+			UnityEngine.SceneManagement.SceneManager.LoadScene("telaLogin");
 		}else{
 			print("OCORREU UM ERRO: Banco_Reconexao");
-		}
+		}*/
 
-	}	
+	}
 
 }

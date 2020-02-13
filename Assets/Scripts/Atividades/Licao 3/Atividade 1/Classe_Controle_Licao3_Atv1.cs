@@ -60,19 +60,19 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
                     {
                         nivel = 1;
                         nDicas = 4;
-                        tempo = 180;
+                        tempo = 300;
                     }
                     else if (n <= 20)
                     {
                         nivel = 2;
                         nDicas = 3;
-                        tempo = 120;
+                        tempo = 250;
                     }
                     else
                     {
                         nivel = 3;
                         nDicas = 2;
-                        tempo = 90;
+                        tempo = 200;
                     }
                 }
             }
@@ -84,8 +84,8 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
 
             //CARREGANDO TODOS OS PREFABS DE EVENTOS
             for(int i = 0; i < Resources.LoadAll<GameObject>("L3_A1/Eventos/").Length; i++)
-            {                
-                eventos.Add(Resources.Load<GameObject>("L3_A1/Eventos/evento_" + (i+1)));                
+            {
+                eventos.Add(Resources.Load<GameObject>("L3_A1/Eventos/evento_" + (i+1)));
             }
 
             //GERANDO TODOS OS EVENTOS NAS POSICOES POSSIVEIS
@@ -154,7 +154,6 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
             print(e);
         }
 
-        
     }
 
     public static List<GameObject> GetChildren(GameObject go)
@@ -229,7 +228,6 @@ public class Classe_Controle_Licao3_Atv1 : MonoBehaviour
                 pnl_tudo.SetActive(false);
                 pnl_acertos.SetActive(true);
             }
-                
         }
     }
 

@@ -10,8 +10,6 @@ public class Classe_Login : MonoBehaviour {
 	public Text txt_erro;
 	public void Metodo_Logar(){
 
-		pnl_loading.SetActive(true);
-
 		InputField txt_login, txt_senha;
 
 		txt_login = GameObject.Find("txt_login").GetComponent<InputField>();
@@ -29,7 +27,7 @@ public class Classe_Login : MonoBehaviour {
 			conexao.conectarBanco();
 
 			/* --------------------------------- ESTUDANTE --------------------------------- */	
-			conexao.Sql = "SELECT * FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_LOGIN='"+txt_login.text+"' AND USER_ESTUDANTE_SENHA='"+txt_senha.text+"';";
+			conexao.Sql = "SELECT * FROM TB_USER_ESTUDANTE WHERE USER_ESTUDANTE_LOGIN='"+txt_login.text+"' AND USER_ESTUDANTE_SENHA=md5('"+txt_senha.text+"');";
 			comando = new MySqlCommand("set net_write_timeout=99999; set net_read_timeout=99999", conexao.ConexaoBanco );
 			comando.ExecuteNonQuery();
 			comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
@@ -52,6 +50,8 @@ public class Classe_Login : MonoBehaviour {
 
 					player.TipoLogin = "ESTUDANTE";
 
+					pnl_loading.SetActive(true);
+
 					UnityEngine.SceneManagement.SceneManager.LoadScene("telaPrincipal");
 				}
 
@@ -60,7 +60,7 @@ public class Classe_Login : MonoBehaviour {
 				comando.Dispose();
 
 				/* --------------------------------- PROFESSOR --------------------------------- */
-				conexao.Sql = "SELECT * FROM TB_USER_PROFESSOR WHERE USER_PROFESSOR_LOGIN='"+txt_login.text+"' AND USER_PROFESSOR_SENHA='"+txt_senha.text+"';";
+				conexao.Sql = "SELECT * FROM TB_USER_PROFESSOR WHERE USER_PROFESSOR_LOGIN='"+txt_login.text+"' AND USER_PROFESSOR_SENHA=md5('"+txt_senha.text+"');";
 				comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 				dados = comando.ExecuteReader();
 
@@ -87,7 +87,7 @@ public class Classe_Login : MonoBehaviour {
 					comando.Dispose();
 
 					/* --------------------------------- MONITOR --------------------------------- */	
-					conexao.Sql = "SELECT * FROM TB_USER_MONITOR WHERE USER_MONITOR_LOGIN='"+txt_login.text+"' AND USER_MONITOR_SENHA='"+txt_senha.text+"';";
+					conexao.Sql = "SELECT * FROM TB_USER_MONITOR WHERE USER_MONITOR_LOGIN='"+txt_login.text+"' AND USER_MONITOR_SENHA=md5('"+txt_senha.text+"');";
 					comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 					dados = comando.ExecuteReader();
 
@@ -114,7 +114,7 @@ public class Classe_Login : MonoBehaviour {
 						comando.Dispose();
 
 						/* --------------------------------- ADM --------------------------------- */
-						conexao.Sql = "SELECT * FROM TB_USER_ADM WHERE USER_ADM_LOGIN='"+txt_login.text+"' AND USER_ADM_SENHA='"+txt_senha.text+"';";
+						conexao.Sql = "SELECT * FROM TB_USER_ADM WHERE USER_ADM_LOGIN='"+txt_login.text+"' AND USER_ADM_SENHA=md5('"+txt_senha.text+"');";
 						comando = new MySqlCommand(conexao.Sql, conexao.ConexaoBanco);
 						dados = comando.ExecuteReader();
 
