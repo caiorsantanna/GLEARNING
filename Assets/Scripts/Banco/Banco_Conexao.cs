@@ -5,15 +5,15 @@ using MySql.Data.MySqlClient;
 public class Banco_Conexao {
 
 	private string linhaConexao = @"
-	Server=remotemysql.com;
+	Server=157.230.62.123;
 	Port=3306;
-	Database=zhNFF45xCl;
-	Uid=zhNFF45xCl;
-	Pwd=yKDAxoNiWA;
+	Database=glearning;
+	Uid=glearning_user;
+	Pwd=glearning123456;
 	Pooling=false;
 	old guids=true;
 	AllowUserVariables=True;
-	charset=utf8;";
+	CharSet=utf8";
 
   private static MySqlConnection conexaoBanco;
 	private static string sql;
@@ -45,11 +45,9 @@ public class Banco_Conexao {
 	public void conectarBanco(){
 		ConexaoBanco = new MySqlConnection(this.linhaConexao);
 		ConexaoBanco.Open();
-		//print("Conexao Banco: "+conexaoBanco.State);
 	}
 
 	public void fecharBanco(){
 		ConexaoBanco.Close();
-		//print("Conexao Banco: "+conexaoBanco.State);
 	}
 }

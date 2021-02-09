@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/telaCadastro.unity
+- path: Assets/Scenes/telaLogin.unity
   isLoaded: 1
   isActive: 1
